@@ -11,4 +11,4 @@
 ###### because React will be used after the program is compiled:
 ###### React.render(React.createElement('div', 'My First Create React App', {class: 'greeting', id: 'my-greeting'}), document.getElementById('root'));
 
-###### 4. reserved tags: const, let, for, function, if, switch...; React is trying its best to avoid reserved tags; so class => className, for => htmlFor
+###### 4. reserved tags: class, const, let, for, function, if, switch...; React is trying its best to avoid reserved tags; so class => className, for => htmlFor
