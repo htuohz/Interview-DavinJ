@@ -19,3 +19,8 @@
 
 
 ###### 6. vanilla html, js, scss pain point: code is messy and extremely hard to make modification because different part of codes affect each other, and there is no entry point to solve a bug on a tree-like manner.   React can do tree-like manner by taking apart demands into components. In my project one (https://davinj-0316.github.io/Davin-Jiang-Personal-Site/) the resume-page-sub and service-page-sub remain 700px width and cannot be changed, I can not do anything to fix the styling bug, and the whole page pull out when it is less than 750px width
+
+###### 7. The code formatting is available in Visual Studio Code through the following shortcuts:
+###### On Windows Shift + Alt + F.
+###### On Mac Shift + Option + F.
+###### On Linux Ctrl + Shift + I.
