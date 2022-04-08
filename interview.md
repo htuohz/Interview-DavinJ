@@ -24,3 +24,6 @@
 ###### On Windows Shift + Alt + F.
 ###### On Mac Shift + Option + F.
 ###### On Linux Ctrl + Shift + I.
+
+###### left indentation: cmd/ctrl + {
+###### right indentation: cmd/ctrl + }
