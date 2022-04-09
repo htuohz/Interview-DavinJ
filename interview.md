@@ -27,3 +27,4 @@
 
 ###### left indentation: cmd/ctrl + {
 ###### right indentation: cmd/ctrl + }
+###### select same words in vscode: cmd/ctrl + D
