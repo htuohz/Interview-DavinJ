@@ -28,3 +28,8 @@
 ###### left indentation: cmd/ctrl + {
 ###### right indentation: cmd/ctrl + }
 ###### select same words in vscode: cmd/ctrl + D
+
+
+
+
+###### 8. converting vanilla html&css to react.js: single responsibility, taking apart .html file into components so that every component has its own responsibility and now it is possible to focus on individual component to develop, every component is independent and we can choose not to use the component the whole program won't be affected
