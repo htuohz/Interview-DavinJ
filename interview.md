@@ -40,4 +40,4 @@
 ###### part 1: point: everything has its pros and cons, the extra 3 seconds I spend saves 3*N seconds for 1 reader to read, 3*N^2 seconds for N readers to read
 ###### part 2: evidence:
 
-###### 11. 就近维护原则: 当我们维护component的html的时候我们应该可以就近维护他的css, 当我们就近维护他的css的时候我们可以就近维护他的html
+###### 11. 就近维护原则: 当我们维护component的html的时候我们应该可以就近维护component的css, 当我们就近维护component的css的时候我们可以就近维护component的html, 当我们就近维护Header的时候， Header里面的Logo应该被就近维护（Logo不能离得太远; Logo.js should also close to Logo.css 
