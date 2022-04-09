@@ -34,4 +34,7 @@
 
 ###### 8. converting vanilla html&css to react.js: single responsibility, taking apart .html file into components so that every component has its own responsibility and now it is possible to focus on individual component to develop, every component is independent and we can choose not to use the component and the whole program won't be affected
 
-###### 9. the extra 3 seconds I spend on code quality saves 3*N seconds when it comes to maintain the code on later stage  
+###### 9. the extra 3 seconds I spend on code quality saves 3*N seconds when it comes to maintain the code on later stage
+
+###### 10. How to write a nice code?
+###### Everything has its pros and cons, the extra 3 seconds I spend saves 3*N seconds for 1 reader to read, 3*N^2 seconds for N readers to read
