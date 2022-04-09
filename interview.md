@@ -37,4 +37,5 @@
 ###### 9. the extra 3 seconds I spend on code quality saves 3*N seconds when it comes to maintain the code on later stage
 
 ###### 10. How to write a nice code?
-###### Everything has its pros and cons, the extra 3 seconds I spend saves 3*N seconds for 1 reader to read, 3*N^2 seconds for N readers to read
+###### part 1: point: everything has its pros and cons, the extra 3 seconds I spend saves 3*N seconds for 1 reader to read, 3*N^2 seconds for N readers to read
+###### part 2: evidence: 
