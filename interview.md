@@ -44,3 +44,5 @@
 ###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
 ###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，react在这点上性能有优势
+###### How is componentDidUpdate triggered?
+###### componentDidUpdate() is fired every time the parent component re-renders (and passes in new props). And in stateful components also whenever ###### setState() is fired. Even if old prevprops and this. props are exactly the same, componentDidUpdate() is still fired if the parent component re-renders.
