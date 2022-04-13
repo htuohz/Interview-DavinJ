@@ -31,7 +31,6 @@
 
 
 
-
 ###### 8. converting vanilla html&css to react.js: single responsibility, taking apart .html file into components so that every component has its own responsibility and now it is possible to focus on individual component to develop, every component is independent and we can choose not to use the component and the whole program won't be affected
 
 ###### 9. the extra 3 seconds I spend on code quality saves 3*N seconds when it comes to maintain the code on later stage
@@ -42,4 +41,6 @@
 
 ###### 11. 就近维护原则: 当我们维护component的html的时候我们应该可以就近维护component的css, 当我们就近维护component的css的时候我们可以就近维护component的html, 当我们就近维护Header的时候， Header里面的Logo应该被就近维护（Logo不能离得太远; Logo.js should also close to Logo.css 
 
-###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的）
+###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
+###### https://reactjs.org/docs/reconciliation.html
+###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，react在这点上性能有优势
