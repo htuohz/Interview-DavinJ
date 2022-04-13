@@ -45,4 +45,14 @@
 ###### https://reactjs.org/docs/reconciliation.html
 ###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，react在这点上性能有优势
 ###### How is componentDidUpdate triggered?
-###### componentDidUpdate() is fired every time the parent component re-renders (and passes in new props). And in stateful components also whenever setState() is fired. Even if old prevprops and this. props are exactly the same, componentDidUpdate() is still fired if the parent component re-renders.
+###### componentDidUpdate() is fired every time the parent component re-renders (and passes in new props). And in stateful components also whenever setState() is fired. Even if old prevprops and this. props （or old state and new state）are exactly the same, componentDidUpdate() is still fired if the parent component re-renders.
+###### eg：以下的例子中 axios会无限发送get request 因为在componentDidUpdate里面设置了setState
+######     componentDidUpdate() {
+######        console.log("lifecycle-componentDidUpdate");
+######          axios.get('http://localhost:8081/order/1:/20')
+######            .then(json => {
+######                this.setState({
+######                    items:json.data.results
+######                }) 
+######            })
+######        }
