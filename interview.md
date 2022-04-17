@@ -56,5 +56,7 @@
 ######                }) 
 ######            })
 ######        }
+###### 更新： android 开发也有类似的机制
+###### https://www.tutorialspoint.com/android/android_acitivities.htm
 
 ###### 13. AWS CDK是imperative的，而且把cloud formation（declarative）的责任拿了过来 （输出cloud formation的yml文件）
