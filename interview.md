@@ -60,3 +60,9 @@
 ###### https://www.tutorialspoint.com/android/android_acitivities.htm
 
 ###### 13. AWS CDK是imperative的，而且把cloud formation（declarative）的责任拿了过来 （输出cloud formation的yml文件）
+
+###### 14. Java里面有太多写好的library的函数的类型是固定的， 要求是String就不能融入其他的类型， void就不能return string
+
+###### 15. Java里面声明一个数组 private String transactionIDs = "[89d80e40459623551e90c44d72a1895dbdd8f406c11c478f140c1dee5568b010" + "," + "589cfda31b427ab1dc4d0c352034913e7e7a8650a7014a9e2f7dfbcacb0b1e8f]"; 把transactionIDs放到request body里面去之后传到nodejs后端，nodejs用JSON.parse(transactionIDs)会解析成一个一个的string
+
+
