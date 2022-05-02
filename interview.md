@@ -63,6 +63,19 @@
 
 ###### 14. Java里面有太多写好的library的函数的类型是固定的， 要求是String就不能融入其他的类型， void就不能return string
 
-###### 15. Java里面声明一个数组 private String transactionIDs = "[89d80e40459623551e90c44d72a1895dbdd8f406c11c478f140c1dee5568b010" + "," + "589cfda31b427ab1dc4d0c352034913e7e7a8650a7014a9e2f7dfbcacb0b1e8f]"; 把transactionIDs放到request body里面去之后传到nodejs后端，nodejs用JSON.parse(transactionIDs)会解析成一个一个的string
+###### 15. Java里面声明一个数组 private String transactionIDs = "[89d80e40459623551e90c44d72a1895dbdd8f406c11c478f140c1dee5568b010" + "," + "589cfda31b427ab1dc4d0c352034913e7e7a8650a7014a9e2f7dfbcacb0b1e8f]"; 把transactionIDs放到request body里面去之后传到nodejs后端，nodejs用transactionIDs.split("")会解析成一个一个的string
+
+###### const str = "[89d80e40459623551e90c44d72a1895dbdd8f406c11c478f140c1dee5568b010,589cfda31b427ab1dc4d0c352034913e7e7a8650a7014a9e2f7dfbcacb0b1e8f]";
+###### const words = str.split('');
+###### console.log(words);
+######  Array ["[", "8", "9", "d", "8", "0", "e", "4", "0", "4", "5", "9", "6", "2", "3", "5", "5", "1", "e", "9", "0", "c", "4", "4", "d", "7", "2", "a", "1", "8", "9", "5", "d", "b", "d", "d", "8", "f", "4", "0", "6", "c", "1", "1", "c", "4", "7", "8", "f", "1", "4", "0", "c", "1", "d", "e", "e", "5", "5", "6", "8", "b", "0", "1", "0", ",", "5", "8", "9", "c", "f", "d", "a", "3", "1", "b", "4", "2", "7", "a", "b", "1", "d", "c", "4", "d", "0", "c", "3", "5", "2", "0", "3", "4", "9", "1", "3", "e", "7", "e", "7", "a", "8", "6", "5", "0", "a", "7", "0", "1", "4", "a", "9", "e", "2", "f", "7", "d", "f", "b", "c", "a", "c", "b", "0", "b", "1", "e", "8", "f", "]"]
+
+
+###### nodejs的json.parse（“12”）只接受纯数字
+###### const json = "[89d80e40459623551e90c44d72a1895dbdd8f406c11c478f140c1dee5568b010,589cfda31b427ab1dc4d0c352034913e7e7a8650a7014a9e2f7dfbcacb0b1e8f]";
+###### const obj = JSON.parse(json);
+###### console.log(obj);
+###### Error: Unexpected token d in JSON at position 2    不接受第二位的d字母
+
 
 
