@@ -1,0 +1,29 @@
+    1  sudo apt update
+    2  sudo apt upgrade
+    3  sudo reboot
+    4  sudo apt upgrade
+    5  sudo apt install build-essential
+    6  sudo apt-get install -y nodejs
+    7  node -v
+    8  sudo apt install -y python3-pip libssl-dev
+    9  sudo python3 --version
+   10  sudo apt install -y python3-pip libssl-dev
+   11  sudo pip3 install bigchaindb==2.2.1
+   12  sudo apt install mongodb
+   13  sudo apt install -y unzip
+   14  wget https://github.com/tendermint/tendermint/releases/download/v0.31.5/tendermint_v0.31.5_linux_amd64.zip
+   15  unzip tendermint_v0.31.5_linux_amd64.zip
+   16  rm tendermint_v0.31.5_linux_amd64.zip
+   17  sudo mv tendermint /usr/local/bin
+   18  tendermint init
+   19  bigchaindb -y configure localmongodb
+   20  bigchaindb --version
+   21  bigchaindb init
+   22  bigchaindb show-config
+   23  bigchaindb tendermint-version
+   24  sudo apt install monit
+   25  bigchaindb-monit-config
+   26  monit -d 1
+   27  monit summary
+   28  ls
+   29  history > history_install.txt
