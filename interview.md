@@ -44,6 +44,8 @@
 
 ###### 11. 就近维护原则: 当我们维护component的html的时候我们应该可以就近维护component的css, 当我们就近维护component的css的时候我们可以就近维护component的html, 当我们就近维护Header的时候， Header里面的Logo应该被就近维护（Logo不能离得太远; Logo.js should also close to Logo.css, 一定要用文件夹处理组件层级的问题
 
+###### 11-continue: ECMA added export { default } from './ThemeSwitcher'; to replace   import ThemeSwitcher from './ThemeSwitcher'   +  export default ThemeSwitcher
+
 ###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
 ###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，react在这点上性能有优势
