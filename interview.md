@@ -46,6 +46,8 @@
 
 ###### 11-continue: ECMA added export { default } from './ThemeSwitcher'; to replace   import ThemeSwitcher from './ThemeSwitcher'   +  export default ThemeSwitcher
 
+###### 11-continue: 在react component中直接在html里面写图片的路径是不能被Webpack识别的，必须import image from'./assets/image.png'
+
 ###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
 ###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，或者用类似set interval之类的函数但是很容易因为线程的问题导致app奔溃, react在这点上性能有优势
