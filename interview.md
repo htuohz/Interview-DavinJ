@@ -2,6 +2,8 @@
 
 ###### 0. During Australian holidays and shopping peak time(boxing day, black Friday Market), ANZ (Australian IT's leader) only aims to handle 100,000  customer requests per second (100,000 cocurrent per second). Australia (AfterPay) barely handles 4 millions cocurrent. Alibaba(1 billions cocurrent per second).  So, Australia does not focus on algorithms much, and does not care theory much, Working Life Balance. Australia likes a person who is obedient, and code elegantly. write codes that others can easily handle. Australian want to hire a person who can improve their working life balance and code productively.
 
+###### As a developer, thinking is a must and always doubt the (declarative/component based) RMR of the code
+
 ###### 1. why we can put html elements in javascript?
 ######  .JSX (if we use eslint airbnb, the .JS would no longer be valid when run the program)
 ###### .JSX: recognises < as html elememts until /> while { as javascript until }
@@ -40,7 +42,7 @@
 ###### part 1: point: everything has its pros and cons, the extra 3 seconds I spend saves 3*N seconds for 1 reader to read, 3*N^2 seconds for N readers to read
 ###### part 2: evidence:
 
-###### 11. 就近维护原则: 当我们维护component的html的时候我们应该可以就近维护component的css, 当我们就近维护component的css的时候我们可以就近维护component的html, 当我们就近维护Header的时候， Header里面的Logo应该被就近维护（Logo不能离得太远; Logo.js should also close to Logo.css 
+###### 11. 就近维护原则: 当我们维护component的html的时候我们应该可以就近维护component的css, 当我们就近维护component的css的时候我们可以就近维护component的html, 当我们就近维护Header的时候， Header里面的Logo应该被就近维护（Logo不能离得太远; Logo.js should also close to Logo.css, 一定要用文件夹处理组件层级的问题
 
 ###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
