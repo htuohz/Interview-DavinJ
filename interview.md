@@ -48,6 +48,8 @@
 
 ###### 11-continue: 在react component中直接在html里面写图片的路径(< img src="./assets/davin.png" alt="Davin Jiang" class="src" / >)是不能被Webpack识别的，必须import image from'./assets/image.png';  VirtualDom 只能识别javascript当import image from ’./image.png‘ 被webpack识别后image就是javascript的一个变量，而这个变量是能够被VirtualDom识别的，路径本身不能被virtualDom识别
 
+###### 11-continue: react利用npm把依赖下载到本地并且用lock把版本锁起来了， 而vanilla html里面的有一些script，style是直接用网上的，不能锁版本，integrity不行
+
 ###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
 ###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，或者用类似set interval之类的函数但是很容易因为线程的问题导致app奔溃, react在这点上性能有优势
