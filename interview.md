@@ -46,7 +46,7 @@
 
 ###### 11-continue: ECMA added export { default } from './ThemeSwitcher'; to replace   import ThemeSwitcher from './ThemeSwitcher'   +  export default ThemeSwitcher
 
-###### 11-continue: 在react component中直接在html里面写图片的路径是不能被Webpack识别的，必须import image from'./assets/image.png'
+###### 11-continue: 在react component中直接在html里面写图片的路径(< img src="./assets/davin.png" alt="Davin Jiang" class="src" / >)是不能被Webpack识别的，必须import image from'./assets/image.png'
 
 ###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
