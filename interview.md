@@ -148,5 +148,19 @@
 ###### console.log(obj);
 ###### Error: Unexpected token d in JSON at position 2    不接受第二位的d字母
 
+###### map and for loops difference:
+###### chars = ['Hello' , 'world!!!'] ;
+######  var retVal = chars.forEach(function(word){
+######    console.log("Saving to db: " + word) 
+######  })
+######  console.log(retVal) //undefined
+
+######  chars = ['Hello' , 'world!!!'] ;
+######  var lengths = chars.map(function(word){
+######    return word.length
+######  }) 
+######  console.log(lengths) //[5,8]
+###### map does exactly the same thing as what the for loop does, except that map creates a new array with the result of calling a provided function on every element in the calling array.
+
 
 
