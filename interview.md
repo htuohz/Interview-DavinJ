@@ -5,6 +5,7 @@
 ###### continue: 如果做个体户，又做产品，又做developer可以只注重界面(UI+功能)的fancy但是， 求职做developer，不会关心产品的好与坏，developer只关心开发(code quality + developer coodination through coding)的好与坏
 
 ###### As a developer, thinking is a must and always doubt the (declarative/component based) RMR of the code
+###### 当时想了这个问题, 但是没有质疑这个问题, 当时没有成为刚精
 
 ###### 1. why we can put html elements in javascript?
 ######  .JSX (if we use eslint airbnb, the .JS would no longer be valid when run the program)
