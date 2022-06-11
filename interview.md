@@ -148,7 +148,7 @@
 ###### console.log(obj);
 ###### Error: Unexpected token d in JSON at position 2    不接受第二位的d字母
 
-###### map and for loops difference:
+###### 17. map and for loops difference:
 ###### chars = ['Hello' , 'world!!!'] ;
 ######  var retVal = chars.forEach(function(word){
 ######    console.log("Saving to db: " + word) 
