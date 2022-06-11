@@ -51,6 +51,7 @@
 ###### 11-continue: react利用npm把依赖下载到本地并且用lock把版本锁起来了， 而vanilla html里面的有一些script，style是直接用网上的，不能锁版本，integrity不行, 尽管vanilla javascript的依赖也能下载但是不能一次性全部下载要一个一个下载
 
 ###### 11-continue: 以下代码中homepage__socialMedias下面有可能会含有其他的类型比如img，i，等等。所以为了maintainable，i里面加className来管理而不是选择器选i tag。
+###### 什么时候给类名？      这个div下面不可能永远都是i有可能以后换成image
 ######       < div class="homepage__socialMedias" > 
 ######                   < i class="fab fa-twitter homepage__socialMediaItem" >< /i >
 ######                   < i class="fab fa-facebook-f homepage__socialMediaItem">< /i>
