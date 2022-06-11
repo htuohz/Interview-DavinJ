@@ -13,6 +13,7 @@
 ######  .JSX (if we use eslint airbnb, the .JS would no longer be valid when run the program)
 ###### .JSX: recognises < as html elememts until /> while { as javascript until }
 ###### react renders virtialDom so that customised (React) Component start with uppercase eg: "< App >Hello World< /App > and built-in (vanilla) html elememts remain in lowwercase eg: < div >Hello World< /div >
+###### 通过javascript的语法来实现html的readable，maintainable，reusable
 
 ###### 2. export const sth = () => { console.log("Hello World")}; ====== import {sth} from ""
 ######    const sth = () => { console.log("Hello World")}; export {sth} ====== import {sth} from ""
