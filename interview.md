@@ -37,6 +37,10 @@
 ###### right indentation: cmd/ctrl + }
 ###### select same words in vscode: cmd/ctrl + D
 
+###### ctrl + D select other same elements with the current selected one
+###### shift + 7(home) cursor gets to the (before) first character
+###### shift + 1(end) cursor gets to the (after) last character
+
 
 
 ###### 8. converting vanilla html&css to react.js: single responsibility, taking apart .html file into components so that every component has its own responsibility and now it is possible to focus on individual component to develop, every component is independent and we can choose not to use the component and the whole program won't be affected
