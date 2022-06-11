@@ -58,7 +58,7 @@
 ######                   < i class="fab fa-instagram homepage__socialMediaItem"></i >
 ######       < /div >
 
-###### continue:  以下代码中homepage__contact本身就是一个table了，table本身就一定有td，我要针对table所有的td加样式
+###### continue:  以下代码中homepage__contact本身就是一个table了，table本身就一定有td，我要针对table所有的td加样式, 这里的table里面基本固定用tr，td, 不太可能用其他的东西
 ######             < table class="homepage__contact">
 ######                < tr>
 ######                  < td>Age</td>
