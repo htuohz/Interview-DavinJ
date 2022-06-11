@@ -85,7 +85,7 @@
 ######                < /tr>
 ######             <  /table>
 
-###### 所以给选择器更加maintainable
+###### 所以给选择器更加maintainable, 更readable
 
 ###### .homepage__contact td {
 ######  padding: 4px 0;
