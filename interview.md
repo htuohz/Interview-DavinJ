@@ -37,7 +37,7 @@
 ###### right indentation: cmd/ctrl + }
 ###### select same words in vscode: cmd/ctrl + D
 
-###### ctrl + D select other same elements with the current selected one
+###### ctrl/cmd + D select other same elements with the current selected one
 ###### shift + 7(home) cursor gets to the (before) first character
 ###### shift + 1(end) cursor gets to the (after) last character
 
