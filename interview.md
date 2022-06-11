@@ -7,6 +7,8 @@
 ###### As a developer, thinking is a must and always doubt the (declarative/component based) RMR of the code
 ###### 当时想了这个问题, 但是没有质疑这个问题, 当时没有成为刚精, 想到一种写法就去google， stackover flow， copy别人的代码
 
+###### debug用二分法binary search, for example： p1页面不工作了，先去html，css操作加上或减去class name，发现工作了，那就是javascript写错了
+
 ###### 1. why we can put html elements in javascript?
 ######  .JSX (if we use eslint airbnb, the .JS would no longer be valid when run the program)
 ###### .JSX: recognises < as html elememts until /> while { as javascript until }
