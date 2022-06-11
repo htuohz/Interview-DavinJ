@@ -5,7 +5,7 @@
 ###### continue: 如果做个体户，又做产品，又做developer可以只注重界面(UI+功能)的fancy但是， 求职做developer，不会关心产品的好与坏，developer只关心开发(code quality + developer coodination through coding)的好与坏
 
 ###### As a developer, thinking is a must and always doubt the (declarative/component based) RMR of the code
-###### 当时想了这个问题, 但是没有质疑这个问题, 当时没有成为刚精, 想到一种写法就去google， stackover flow， copy别人的代码
+###### 当时想了这个问题, 但是没有质疑这个问题, 当时没有成为杠精, 想到一种写法(就是要用这个方法写)就去google， stackover flow， copy别人的代码
 
 ###### debug用二分法binary search, for example： p1页面不工作了，先去html，css操作加上或减去class name，发现工作了，那就是javascript写错了, 显示／隐藏一个页面用添加／删除class name更readable，maintainable，而不是javascript加上display：none，用class name具象化了这个功能
 
