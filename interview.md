@@ -57,6 +57,49 @@
 ######                   < i class="fab fa-instagram homepage__socialMediaItem"></i >
 ######       < /div >
 
+###### continue:  以下代码中homepage__contact本身就是一个table了，table本身就一定有td，我要针对table所有的td加样式
+######             < table class="homepage__contact">
+######                < tr>
+######                  < td>Age</td>
+######                  < td>20</td>
+######                < /tr>
+######                < tr>
+######                  < td>Residence</td>
+######                  < td>Gaia</td>
+######                < /tr>
+######                < tr>
+######                  < td>Address</td>
+######                  < td>Level 3 / 57 Coronation Drive, Brisbane</td>
+######                < /tr>
+######                < tr>
+######                  < td>Email</td>
+######                  < td>
+######                    < a href="mailto:info@jiangren.com.au">
+######                      info@jiangren.com.au
+######                    < /a>
+######                  < /td>
+######                < /tr>
+######                < tr>
+######                  < td>Phone</td>
+######                  < td>+0123 123 456 789</td>
+######                < /tr>
+######             <  /table>
+
+###### 所以给选择器更加maintainable
+
+###### .homepage__contact td {
+######  padding: 4px 0;
+###### }
+
+###### .homepage__contact td:first-of-type {
+######  padding-right: 42px;
+###### }
+
+###### .homepage__contact td:last-of-type {
+######  color: #9e9e9e;
+###### }
+
+
 
 ###### 12. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
