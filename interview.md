@@ -169,6 +169,7 @@
 ###### !!important: 
 ###### a. import "./Navigation.css";               import整个css文件进来;         css仍然在同一个scope, 怕重名
 ###### b. import styles from "./Navigation.css";    import as an Object;         有且仅当< div className=｛styles.sth｝>的时候, css在不同的scope, 不怕重名
+###### 因为就算重名了后不同的scope会有不同的后缀名字 eg: Timeline_wrapper__q5rLW
 
 
 
