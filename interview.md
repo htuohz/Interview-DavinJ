@@ -166,6 +166,9 @@
 ###### 那种非常generic的又要时常被别的developer拿去用的component是放在shared 文件夹下面（shared component）
 
 ###### 19. scope: 我们可以通过JavaScript的语法（eg: scope）让css也变得高级 (eg: import styles from './Timeline.css';)
+###### !!important: 
+###### a. import "./Navigation.css";               import整个css文件进来         css仍然在同一个scope, 怕重名
+###### b. import styles from "./Navigation.css";    import as an Object         有且仅当< div className=｛styles.sth｝>的时候, css在不同的scope, 不怕重名
 
 
 
