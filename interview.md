@@ -13,7 +13,7 @@
 ######  .JSX (if we use eslint airbnb, the .JS would no longer be valid when run the program)
 ###### .JSX: recognises < as html elememts until /> while { as javascript until }
 ###### react renders virtialDom so that customised (React) Component start with uppercase eg: "< App >Hello World< /App > and built-in (vanilla) html elememts remain in lowwercase eg: < div >Hello World< /div >
-###### 通过javascript的语法来实现html的readable，maintainable，reusable
+###### 通过javascript的语法来实现html的readable，maintainable，reusable, 我们可以通过JavaScript的语法（eg: scope）让css也变得高级
 
 ###### 2. export const sth = () => { console.log("Hello World")}; ====== import {sth} from ""
 ######    const sth = () => { console.log("Hello World")}; export {sth} ====== import {sth} from ""
@@ -164,6 +164,8 @@
 
 ###### 18. component在app下面的Content里面并且与Content有千丝万缕的联系, 这种components叫做业务components
 ###### 那种非常generic的又要时常被别的developer拿去用的component是放在shared 文件夹下面（shared component）
+
+###### 19. scope: 我们可以通过JavaScript的语法（eg: scope）让css也变得高级 (eg: import styles from './Timeline.css';)
 
 
 
