@@ -170,7 +170,12 @@
 ###### a. import "./Navigation.css";               import整个css文件进来;         css仍然在同一个scope, 怕重名
 ###### b. import styles from "./Timeline.module.css";    import as an Object;         有且仅当< div className=｛styles.wrapper｝>的时候, css在不同的scope, 不怕重名
 ###### 因为就算重名了后不同的scope会有不同的后缀名字 eg: Timeline_wrapper__q5rLW
-###### import styles from "./Timeline.module.css";     css文件中间必须写.module. 因为用的create－react－app
+###### import styles from "./Timeline.module.css";     css文件中间必须写.module. 因为用的create－react－app;  
+###### module前面的文字（eg: Timeline）会自动变成className的前缀; 所以加上本体名字和scope后缀就变成了Timeline_wrapper__q5rLW
+###### javascript做了2件事情：第一件事就是上述的改名字; 第二件事就是把compile之后的html添加class="Timeline_wrapper__q5rLW", compile之后的css添加对应样式
+######  (.Timeline_wrapper__q5rLW {
+######   margin-top:0px
+######  })
 
 
 
