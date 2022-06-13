@@ -162,5 +162,8 @@
 ######  console.log(lengths) //[5,8]
 ###### map does exactly the same thing as what the for loop does, except that map creates a new array with the result of calling a provided function on every element in the calling array.
 
+###### component在app下面的Content里面并且与Content有千丝万缕的联系, 这种components叫做业务components
+###### 那种非常generic的又要时常被别的developer拿去用的component是放在shared 文件夹下面（shared component）
+
 
 
