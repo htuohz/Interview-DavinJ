@@ -176,7 +176,7 @@
 ######  (.Timeline_wrapper__q5rLW {
 ######   margin-top:0px
 ######  })
-###### 这种写法叫css modular（css在js中的实现）通过JavaScript解决css的全局性和scoping问题
+###### 这种写法叫css module（css在js中的实现）通过JavaScript解决css的全局性和scoping问题
 ###### 与之对应的更readable的写法叫styled component
 
 
