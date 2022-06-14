@@ -186,5 +186,7 @@
 ###### 这种写法叫css module（css在js中的实现）通过JavaScript解决css的全局性和scoping问题
 ###### 与之对应的更readable的写法叫styled component
 
+###### styled component可以直接在target js文件写或者在当前目录另起一个js文件写，然后target js文件import所有的const变量，但是target js里写更符合就近维护的法则
+
 
 
