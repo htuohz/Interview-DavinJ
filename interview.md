@@ -189,6 +189,7 @@
 ###### styled component可以直接在target js文件写或者在当前目录另起一个js文件写，然后target js文件import所有的const变量，但是target js里写更符合就近维护的法则
 ###### 就近维护: 因为在这里,我们动了css就要动html，我们动了html就要动css
 ###### 分开写的话另起的那个js文件名要为primitive.js
+###### styled component: 渲染到页面后class的名字会变成一个hash值
 
 
 
