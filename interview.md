@@ -42,6 +42,13 @@
 ###### shift + 7(home) cursor gets to the (before) first character
 ###### shift + 1(end) cursor gets to the (after) last character
 
+######  vscode convert to upper case or lower case or title case
+######  Select the text to transform. Use Ctrl + L to selected the whole line
+######  Open Show all commands. Linux and Windows: Ctrl + Shift + P, Mac: ⇧⌘P
+######  Type in the command, e.g. lower, upper, title
+######  Wait for auto-complete (like in the animation)
+######  Hit Enter
+
 
 
 ###### 8. converting vanilla html&css to react.js: single responsibility, taking apart .html file into components so that every component has its own responsibility and now it is possible to focus on individual component to develop, every component is independent and we can choose not to use the component and the whole program won't be affected
@@ -178,5 +185,6 @@
 ######  })
 ###### 这种写法叫css module（css在js中的实现）通过JavaScript解决css的全局性和scoping问题
 ###### 与之对应的更readable的写法叫styled component
+
 
 
