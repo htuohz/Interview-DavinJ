@@ -187,6 +187,7 @@
 ###### 与之对应的更readable的写法叫styled component
 
 ###### styled component可以直接在target js文件写或者在当前目录另起一个js文件写，然后target js文件import所有的const变量，但是target js里写更符合就近维护的法则
+###### 就近维护: 因为在这里,我们动了css就要动html，我们动了html就要动css
 
 
 
