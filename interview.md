@@ -191,5 +191,11 @@
 ###### 分开写的话另起的那个js文件名要为primitive.js
 ###### styled component: 渲染到页面后class的名字会变成一个hash值
 
+###### 	  1. camelCase
+######    2. PascalCase
+######    3. snake_case
+######    4. kebab-case
+######    5. UPPERCASE (or SCREAMCASE)
+
 
 
