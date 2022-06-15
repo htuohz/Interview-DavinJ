@@ -138,7 +138,7 @@
 ###### 更新： android 开发也有类似的机制
 ###### https://www.tutorialspoint.com/android/android_acitivities.htm
 
-###### 12 -contuniue： 无论是C语言的while loop还是react的无限axios触发机制，还是ES6的setinterval，还是JAVA的那个类似于setinterval的机制, 都是为了让整个应用程序动起来（不然的话应用程序是无法重复执行一个命令的，程序语言执行一次后就completed了，react渲染页面后更改入参是不会重新渲染的，android开发的Java也一样不会重新渲染（以verfication button为例， 当textView更改为duplicated的时候那个verification button要点第二次才能发动patch的okhttp请求），c语言执行一次后就不动了），解决实时更新的问题， 硬件更多是自动更新的需求（收集数据，执行命令），而web一般是一些手动更新的需求（如用户手动button点击）和自动更新的需求（如更新list）
+###### 12 -contuniue： 无论是C语言的while loop还是react的无限axios触发机制，还是ES6的setinterval，还是JAVA的那个类似于setinterval的机制, 都是为了让整个应用程序动起来（不然的话应用程序是无法重复执行一个命令的，程序语言执行一次后就completed了，react渲染页面后更改入参是不会重新渲染的(我们只能看到DOM被渲染的一瞬间的内容)，android开发的Java也一样不会重新渲染（以verfication button为例， 当textView更改为duplicated的时候那个verification button要点第二次才能发动patch的okhttp请求），c语言执行一次后就不动了），解决实时更新的问题， 硬件更多是自动更新的需求（收集数据，执行命令），而web一般是一些手动更新的需求（如用户手动button点击）和自动更新的需求（如更新list）
 
 ###### 13. AWS CDK是imperative的，而且把cloud formation（declarative）的责任拿了过来 （输出cloud formation的yml文件）
 
