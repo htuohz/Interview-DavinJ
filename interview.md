@@ -199,5 +199,13 @@
 ######    4. kebab-case
 ######    5. UPPERCASE (or SCREAMCASE)
 
+###### 20. React Synthetic Event:
+###### https://reactjs.org/docs/events.html
+###### 在react的元素上去捕捉很多合成事件
+###### for example, Mouse Event:
+###### onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter onDragExit
+###### onDragLeave onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave
+###### onMouseMove onMouseOut onMouseOver onMouseUp
+
 
 
