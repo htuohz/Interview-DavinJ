@@ -122,7 +122,7 @@
 ###### 12 const activePageState = useState('HomePage'); activePageState[1] 是真正发动／触发re－render的部分; activePageState[1] (newValue); activePageState[0] (initValue)初始值
 ###### 12 -continue:. React有re-render的机制（setState之后触发re-render），所以我request后拿到新的数据存入setState会自动的触发re-render（页面自动局部刷新了，而不是全局的刷新，只有react能做到，结合龙哥讲的react reconciliation）
 ###### https://reactjs.org/docs/reconciliation.html
-###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，或者用类似set interval之类的函数但是很容易因为线程的问题导致app奔溃, react在这点上性能有优势
+###### 对比安卓开发的时候我只能用swipe或者button去刷新entire app，或者JAVA用类似set interval之类的函数(如下example)但是很容易因为线程的问题导致app奔溃, react在这点上性能有优势
 ###### How is componentDidUpdate triggered?
 ###### componentDidUpdate() is fired every time the parent component re-renders (and passes in new props). And in stateful components also whenever setState() is fired. Even if old prevprops and this. props （or old state and new state）are exactly the same, componentDidUpdate() is still fired if the parent component re-renders.
 ###### eg：以下的例子中 axios会无限发送get request 因为在componentDidUpdate里面设置了setState  因此page上任何改动都能实时捕捉到
@@ -139,6 +139,19 @@
 ###### https://www.tutorialspoint.com/android/android_acitivities.htm
 
 ###### 12 -contuniue： 无论是C语言的while loop还是react的无限axios触发机制，还是ES6的setinterval，还是JAVA的那个类似于setinterval的机制, 都是为了让整个应用程序动起来（不然的话应用程序是无法重复执行一个命令的，程序语言执行一次后就completed了，react渲染页面后更改入参是不会重新渲染的(我们只能看到DOM被渲染的一瞬间的内容)，android开发的Java也一样不会重新渲染（以verfication button为例， 当textView更改为duplicated的时候那个verification button要点第二次才能发动patch的okhttp请求），c语言执行一次后就不动了），解决实时更新的问题， 硬件更多是自动更新的需求（收集数据，执行命令），而web一般是一些手动更新的需求（如用户手动button点击）和自动更新的需求（如更新list）
+
+###### 12 -continue: JAVA的那个类似于setinterval的机制:
+###### //        long SECOND_IN_MILLI = 200000; //20 seconds
+###### //        final Handler timerHandler = new Handler();
+###### //        final Runnable timerRunnable = new Runnable() {
+###### //            @Override
+###### //            public void run() {
+###### //                displayStockList();
+###### //                myUpdateOperation();
+###### //                timerHandler.postDelayed(this, SECOND_IN_MILLI);
+###### //            }
+###### //        };
+###### //        timerHandler.postDelayed(timerRunnable, SECOND_IN_MILLI);
 
 ###### 13. AWS CDK是imperative的，而且把cloud formation（declarative）的责任拿了过来 （输出cloud formation的yml文件）
 
