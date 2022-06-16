@@ -153,6 +153,12 @@
 ###### //        };
 ###### //        timerHandler.postDelayed(timerRunnable, SECOND_IN_MILLI);
 
+###### 12 -continue: 
+###### 猜想：threejs也是只渲染一次的，但是这一次把所有的情况比如
+######         lightScale = d3.scaleLinear().domain(d3.extent(lights)).range(['#262626','#FFFFFF']);
+######         tempScale = d3.scaleLinear().domain(d3.extent(temps)).range(['#00B0F0','#FF0000']);
+###### 都包含在内了，因此， json/url json的数据的改变使得页面发生的变换都是早就渲染好的，而不是重新渲染
+
 ###### 13. AWS CDK是imperative的，而且把cloud formation（declarative）的责任拿了过来 （输出cloud formation的yml文件）
 
 ###### 14. Java里面有太多写好的library的函数的类型是固定的， 要求是String就不能融入其他的类型， void就不能return string
