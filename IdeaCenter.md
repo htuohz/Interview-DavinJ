@@ -229,5 +229,10 @@
 ###### onDragLeave onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave
 ###### onMouseMove onMouseOut onMouseOver onMouseUp
 
+###### Why cannot we use (< button onClick={() => {this.state.activePage = 'ResumePage';}} >) directly?
+###### because it cannot trigger re-render
+###### we should use this.setState({activePage: 'ActivePage'});
+
+
 
 
