@@ -27,3 +27,8 @@
    27  monit summary
    28  ls
    29  history > history_install.txt
+   
+   
+   
+   
+   2.2.2: http://docs.bigchaindb.com/en/master/installation/node-setup/set-up-node-software.html
