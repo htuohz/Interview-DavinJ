@@ -9,7 +9,8 @@
 ###### As a developer, thinking is a must and always doubt the (declarative/component based) RMR of the code
 
 ###### imperative is like a Chinese restaurant chief, he has his unique cooking style, which is really unique;
-###### declarative is like a KFC/MacDonald staff, he follows the company standard to cook; uniform style, 无论是什么人，写声明式编程的时候大方向是一样的，就带来了maintainable和reusable的提升   
+###### declarative is like a KFC/MacDonald staff, he follows the company standard to cook; uniform style, 无论是什么人，写声明式编程的时候大方向是一样的，就带来了maintainable和reusable的提升
+###### 声明式编程利用了大量的library封装好的功能我只要调用一下然后凭凑一下就可以实现我的需求，它没有那么自由，我也不需要自由调节， 而命令式编程很自由，而我又没有这个能力在自由的规则下开发出需求
 
 ###### 当时想了这个问题, 但是没有质疑这个问题, 当时没有成为杠精, 想到一种写法(就是要用这个方法写)就去google， stackover flow， copy别人的代码
 
@@ -239,6 +240,8 @@
 ###### because it cannot trigger re-render
 ###### we should use this.setState({activePage: 'ActivePage'});
 ###### useState(); 为空就是 undefined
+
+
 
 
 
