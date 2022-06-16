@@ -27,6 +27,7 @@
 
 ###### 声明式编程 eg:
 ###### < a className={`navbar__item ${activePage === page ? 'navbar__item--active' : '' }` }
+###### note: 不要用短路计算在className里面因为当结果为false那么className里面会多出现一个false eg: navbar__item false
 
 ###### 声明式编程利用了大量的library封装好的功能我只要调用一下然后凭凑一下就可以实现我的需求，它没有那么自由，我也不需要自由调节， 而命令式编程很自由，而我又没有这个能力在自由的规则下开发出需求
 
