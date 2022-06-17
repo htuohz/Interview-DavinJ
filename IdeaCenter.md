@@ -261,6 +261,17 @@
 ###### we should use this.setState({activePage: 'ActivePage'});
 ###### useState(); 为空就是 undefined
 
+###### setActivity({...activity, ...{[name]: value}}中的 {[name]: value}}
+###### https://medium.com/@bretdoucette/understanding-this-setstate-name-value-a5ef7b4ea2b4
+###### const key = 'Mickey Mouse'
+###### const value = 'Happy'
+###### const disneyCharacter = {
+######  [key]: value,
+###### }
+###### console.log(disneyCharacter) ==> {Mickey Mouse: 'Happy'}
+###### In Javascript, when you create an object literal {} and you wrap the object’s key in array brackets [key] you can dynamically set that key.
+
+
 
 
 
