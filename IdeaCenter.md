@@ -272,6 +272,16 @@
 ###### In Javascript, when you create an object literal {} and you wrap the object’s key in array brackets [key] you can dynamically set that key.
 
 
+###### 合并更新（只有react class component有，react hook不存在这个问题): 
+###### eg, this.state = {
+###### loading: true,
+###### name: 'Alice',
+###### };
+
+###### this.setState = { loading: false}
+###### 结果为: { loading: false, name: 'Alice' } (class component能自动合并更新的那一小部分到整体的state)
+
+
 
 
 
