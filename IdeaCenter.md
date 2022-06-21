@@ -282,6 +282,8 @@
 ###### 结果为: { loading: false, name: 'Alice' } (class component能自动合并更新的那一小部分到整体的state)
 
 
+###### 21. 开发前先把UI design用physically的方法想好，再开发静态页面, 再开始弄数据流design(state in 最近共同parent component), 再反向数据流
+
 
 
 
