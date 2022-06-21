@@ -288,6 +288,7 @@
 ###### component取名字考虑的点:
 ###### 从复用角度出发的component
 ###### 从业务逻辑出发的component
+###### 不需要其他的context的帮助，component的名字必须要能描述自己
 
 
 
