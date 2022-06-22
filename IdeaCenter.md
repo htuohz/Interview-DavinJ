@@ -282,13 +282,14 @@
 ###### 结果为: { loading: false, name: 'Alice' } (class component能自动合并更新的那一小部分到整体的state)
 
 
-###### 21. 开发前先把UI design用physically的方法想好，再考虑component业务逻辑(该component的责任是什么), 再开发静态页面, 再开始弄数据流design(state in 最近共同parent component), 再反向数据流
+###### 21. 开发前先把UI design用physically的方法想好，再考虑component业务逻辑(该component的责任是什么), 再开发静态页面, 再deal with屏幕适配问题,再开始弄数据流design(state in 最近共同parent component), 再反向数据流
 ###### 如果半途加入项目，接受开发到一半的项目，那么就针对新接手的任务范围去执行上述方法，绝对不能顾全局
 
 ###### component取名字考虑的点:
 ###### 从复用角度出发的component
 ###### 从业务逻辑出发的component
 ###### 不需要其他的context的帮助，component的名字必须要能描述自己
+###### *** 屏幕适配问题永远在做好第一版之后考虑
 
 
 
