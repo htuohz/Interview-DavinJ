@@ -292,6 +292,14 @@
 ###### *** 屏幕适配问题永远在做好第一版之后考虑
 
 
+###### 22. 以下代码中Attributes已经超过了1项责任（除了加一点styling的责任，还要渲染一个Divider） 所以超出了single responsibility，所以Attributes要拆出来作为单独的一个folder而不是仅仅只是一个标签
+######      < Attributes>
+######        < Attribute name="HUMIDITY" data="71%" />
+######        < Divider />
+######        < Attribute name="WIND" data="7 K/M" />
+######      < /Attributes>
+
+
 
 
 
