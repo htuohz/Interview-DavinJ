@@ -293,6 +293,19 @@
 
 
 ###### 22. 以下代码中Attributes已经超过了1项责任（除了加一点styling的责任，还要渲染一个Divider） 所以超出了single responsibility，所以Attributes要拆出来作为单独的一个folder而不是仅仅只是一个标签
+
+###### const Attributes = styled.div`
+######   display: flex;
+######   justify-content: center;
+######   margin-top: 1rem;
+######  `;
+
+###### const Divider = styled.div`
+######   width: 2px;
+######   background: rgba(255, 255, 255, 0.7);
+######   margin: 0 1.5rem;
+######  `;
+
 ######      < Attributes>
 ######        < Attribute name="HUMIDITY" data="71%" />
 ######        < Divider />
