@@ -314,7 +314,7 @@
 
 
 ###### ***当责任大于一项的时候就自成一体
-
+###### p2的UI上面的cityName多了一条横线， 下面的cityName有190px的width，所以2个cityName都超过了1个责任就拆出来各自为政,这个不算copy／past
 
 
 
