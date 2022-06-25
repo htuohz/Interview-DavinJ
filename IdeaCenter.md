@@ -317,6 +317,21 @@
 ###### p2的UI上面的cityName多了一条横线， 下面的cityName有190px的width，所以2个cityName都超过了1个责任, 而且相互的责任不存在包含关系, 就拆出来各自为政,这个不算copy／past
 
 
+###### ** 以下代码中verifyToken会把unkownPoint覆盖掉 (以下代码是在index.js里面)
+###### const unkownPoint = require('./unkownPoint);
+###### const verifyToken = require('./tokenAuth');
+
+###### module.exports = unkownPoint;
+###### module.exports = verifyToken;
+
+###### 所以要把引入的变量用Object包起来:
+###### const unkownPoint = require('./unkownPoint);
+###### const verifyToken = require('./tokenAuth');
+###### module.exports = { unkownPoint, verifyToken };
+
+###### 在app.js引入时候用 const { unkownPoint, verifyToken } = require('./src/middleware/error');
+
+
 
 
 
