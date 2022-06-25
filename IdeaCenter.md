@@ -317,7 +317,7 @@
 ###### p2的UI上面的cityName多了一条横线， 下面的cityName有190px的width，所以2个cityName都超过了1个责任, 而且相互的责任不存在包含关系, 就拆出来各自为政,这个不算copy／past
 
 
-###### ** 以下代码中verifyToken会把unkownPoint覆盖掉 (以下代码是在index.js里面)
+###### ** 23. 以下代码中verifyToken会把unkownPoint覆盖掉 (以下代码是在index.js里面)
 ###### const unkownPoint = require('./unkownPoint);
 ###### const verifyToken = require('./tokenAuth');
 
@@ -330,6 +330,13 @@
 ###### module.exports = { unkownPoint, verifyToken };
 
 ###### 在app.js引入时候用 const { unkownPoint, verifyToken } = require('./src/middleware/error');
+
+
+###### 24. 不是所有的时候都是把责任丢给shared component做，eg：P2 的这个Temperature的shared component在涉及到右边的margin－right的时候并不是在shared component里面加入可以调节margin的代码，而是在调用temperature的那个组件里面用styled－component复写掉（给Temperature增添额外的样式）原来的Temperature:
+###### const styledTemperature = styled(Temperature)`font-size: 1rem; margin-right:1.25rem`
+
+
+
 
 
 
