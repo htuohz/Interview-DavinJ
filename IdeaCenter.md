@@ -338,6 +338,16 @@
 
 
 
+###### 25. //当一个container紧挨着另外一个container的时候, margin left
+###### const Container = styled.div`
+######  text-align: center;
+######  & ~ & {
+######    margin-left: 2rem;
+######  }
+###### ` ;
+
+
+
 
 
 
