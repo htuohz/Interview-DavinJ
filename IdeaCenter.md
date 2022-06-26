@@ -282,7 +282,7 @@
 ###### 结果为: { loading: false, name: 'Alice' } (class component能自动合并更新的那一小部分到整体的state)
 
 
-###### 21. 开发前先把UI design用physically的方法想好，再考虑component业务逻辑(该component的责任是什么), 再开发静态页面(如果遇到复用性问题或者copy paste组件, 就需要多抽出来一个组件变成shared component, shared component应该已经是最小组件，不应该再调用其他的shared component进来), 再deal with屏幕适配问题,再开始弄数据流design(state in 最近共同parent component, 写状态的时候永远不要考虑RMR的平衡而是直接无脑的找nearest common parent component), 再反向数据流
+###### 21. 开发前先把UI design用physically的方法想好，再考虑component业务逻辑(该component的责任是什么), 再开发静态页面(如果遇到复用性问题或者copy paste组件, 就需要多抽出来一个组件变成shared component, shared component应该已经是最小组件，不应该再调用其他的shared component进来), 再deal with屏幕适配问题,再开始弄数据流design(state in 最近共同parent component, 写状态的时候永远不要考虑RMR的平衡而是从 当前/最近 开始写 然后直接无脑的找nearest common parent component), 再反向数据流
 
 ###### 开发静态页面: 要不要拆出去做shared component的一个决策点在于 以后对此shared component再开发的话是否要在所有的调用处都做修改，如果是的话维护成本过大，就不需要shared component，如果调用处无需修改  则拆出去做shared component
 
