@@ -333,7 +333,8 @@
 
 
 ###### 24. 不是所有的时候都是把责任丢给shared component做，eg：P2 的这个Temperature的shared component在涉及到右边的margin－right的时候并不是在shared component里面加入可以调节margin的代码，而是在调用temperature的那个组件里面用styled－component复写掉（给Temperature增添额外的样式）原来的Temperature:
-###### const styledTemperature = styled(Temperature)`font-size: 1rem; margin-right:1.25rem`
+###### const styledTemperature = styled(Temperature)` font-size: 1rem; margin-right:1.25rem ` 
+###### 把不可预测的或者特别复杂的责任全部集中在shared component只会在后面的CICD中增加maintaince的难度, 这时候反而是拆出去各自为政的比较容易maintain
 
 
 
