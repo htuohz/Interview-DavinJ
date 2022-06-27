@@ -219,6 +219,7 @@
 ######  console.log(lengths) //[5,8]
 ###### map does exactly the same thing as what the for loop does, except that map creates a new array with the result of calling a provided function on every element in the calling array.
 ###### map和filter都是一样，创建新的array出来
+###### 这也叫immutable, 这是为了增加maintainable, 因为如果mutable改了原值的话，log出来的值每次都不一样， 可能有多个程序员在开发这个变量，所以有history是必要的
 
 ###### 18. component在app下面的Content里面并且与Content有千丝万缕的联系, 这种components叫做业务components
 ###### 那种非常generic的又要时常被别的developer拿去用的component是放在shared 文件夹下面（shared component）
