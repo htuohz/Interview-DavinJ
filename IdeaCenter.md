@@ -351,6 +351,10 @@
 ###### ` ;
 
 
+###### 26. *** react里面如果涉及到一个call back function里面包含了另外一个call back function的话, 会有sync call back之类的错误
+###### 比如把event从一个call back传入内嵌的另外一个call back,会有synthetic event的错误
+
+
 
 
 
