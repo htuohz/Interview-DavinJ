@@ -374,6 +374,7 @@
 ######                   })
 ######     .then((receipt) => { console.log(receipt) }
 ###### 如果参数receipt前面要有参数user，整个 .then((receipt) => { console.log(receipt) } 要嵌套进去上面parent scope的 return的后面
+###### 因此async await诞生了
 
 
 
