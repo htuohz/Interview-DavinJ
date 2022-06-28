@@ -364,6 +364,7 @@
 
 
 ###### 28. 用了Promise后promise要return出去后才能.then()   如果看到有函数没有return的话就是return封装在里面了看不到
+###### Promise比callback更加readable， maintainable
 
 
 
