@@ -376,6 +376,8 @@
 ###### 如果参数receipt前面要有参数user，整个 .then((receipt) => { console.log(receipt) } 要嵌套进去上面parent scope的 return的后面
 ###### 因此async await诞生了
 
+###### 29. 同步和异步可以理解为   与计算机默认的执行顺序同步   与计算机默认的执行顺序不同步
+
 
 
 
