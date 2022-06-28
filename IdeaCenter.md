@@ -382,6 +382,13 @@
 ###### await: async的函数中可以有一个或多个异步操作，一旦遇到await就会立即返回一个pending状态的Promise对象，暂时返回执行代码的控制权，使得函数外的代码得以继续执行，这是保证非阻塞的部分。并且多个异步请求是可以并发的（多个Job Queue、Ajax、Timer、I/O(Node)）。等await后的异步请求resolve了（或reject)，主线程才会继续执行async函数内后面的部分，这是保证的顺序性（而且最终函数返回的也是一个Promise对象）。我们说的把异步变同步指的是在async函数内部异步代码就像被同步执行的那样（继发执行），而不是它会阻塞主线程一直等待异步调用返回。
 
 
+###### 30. async function sth(user) { const data = await enrollAndPay(user);  showWelcomeMessage() }
+######   showWelcomeMessage() 等到await enrollAndPay(user) 执行完成再启动
+
+###### async function sth(user) { enrollAndPay(user).then((data) => {console.log(data); });  showWelcomeMessage() }
+###### showWelcomeMessage() 等到enrollAndPay(user).then((data) => {console.log(data); }); 开始启动再启动
+
+
 
 
 
