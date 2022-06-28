@@ -407,6 +407,8 @@
 
 
 ###### 31. stack里面会存primitive type value(fixed size)以及reference   heap里面会存object，array(size scalable)
+###### stack仅仅负责存放函数, 嵌套最里面的函数在stack的最顶层, FILO
+###### quene负责执行函数，stack最顶层最先执行, FIFO
  
 
 
