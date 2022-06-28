@@ -409,6 +409,7 @@
 ###### 31. stack里面会存primitive type value(fixed size)以及reference   heap里面会存object，array(size scalable)
 ###### stack仅仅负责存放函数, 嵌套最里面的函数在stack的最顶层, FILO, stack最顶层最先执行函数
 ###### 函数执行完一个call stack清空一个， 当call stack完全清空的时候， event loop开始工作， 问询callback quene(FIFO), event loop 会把callback quene的事件挨个放到stack里面执行(排队的第一个放在stack最底层)
+###### await写与不写的区别在于await写了以后有err的话可以更好的抓取，因为await 本身与promise有关
 
 
 
