@@ -404,6 +404,9 @@
 
 ###### async await 的假同步和outside真同步的区别在于是否会被组塞
 ###### 真同步被阻塞后真的就页面不动了, 假同步被阻塞后async函数以外的那些代码依旧在按顺序执行的，所以不会被完全阻塞
+
+
+###### 31. stack里面会存primitive type value(fixed size)以及reference   heap里面会存object，array(size scalable)
  
 
 
