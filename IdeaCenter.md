@@ -363,6 +363,9 @@
 ###### 后面的参数data是fs.readFile真实返回的值(也就是dummy.js的内容)
 
 
+###### 28. 用了Promise后promise要return出去后才能.then()   如果看到有函数没有return的话就是return封装在里面了看不到
+
+
 
 
 
