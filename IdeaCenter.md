@@ -358,6 +358,9 @@
 ###### 26. *** react里面如果涉及到一个call back function里面包含了另外一个call back function的话, 会有sync call back之类的错误
 ###### 比如把event从一个call back传入内嵌的另外一个call back,会有synthetic event的错误, 所以要把event声明弄在第二个callback的外面确保第二个call back与第一个call back使用同一个event
 
+###### 27.callback函数的第一个参数永远都是err后面的参数才是真实返回的值
+###### eg: fs.readFile('./dummy.js', (err, data) => { if(err) throw err; console.log(data) })
+###### 后面的参数data是fs.readFile真实返回的值(也就是dummy.js的内容)
 
 
 
