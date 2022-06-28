@@ -400,7 +400,10 @@
 
 ###### console.log("outside");
 ###### log result: 1. outside 2. ${content} 3. readFile submitted!
-###### async, promise/then, call back里面都是分身在做事(就算不写await也是分身在做事)   async, promise/then, call back外面都是本体在做事 
+###### async, promise/then, call back里面都是分身在做事(就算不写await也是分身在做事)   async, promise/then, call back外面都是本体在做事
+
+###### async await 的假同步和outside真同步的区别在于是否会被组塞
+###### 真同步被阻塞后真的就页面不动了, 假同步被阻塞后async函数以外的那些代码依旧在按顺序执行的，所以不会被完全阻塞
  
 
 
