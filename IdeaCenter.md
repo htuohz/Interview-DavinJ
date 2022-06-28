@@ -366,6 +366,13 @@
 ###### 28. 用了Promise后promise要return出去后才能.then()   如果看到有函数没有return的话就是return封装在里面了看不到
 ###### Promise比callback更加readable， maintainable
 ###### 或者是箭头函数把单行的return省略了
+###### *** Promise的缺点是跨层对Promise调用 会和callback一样层层嵌套, 依然摆脱不了降低RMR的命运
+###### eg: SignIn({ email, password,}) 
+######                   .then((user) => { 
+######                       return enroll(user)
+######                              .then((enrollment) => {return pay(user, enrollment); }); 
+######                   })
+######     .then((receipt) => { console.log(receipt) }
 
 
 
