@@ -388,6 +388,19 @@
 ###### async function sth(user) { enrollAndPay(user).then((data) => {console.log(data); });  showWelcomeMessage() }
 ###### showWelcomeMessage() 等到enrollAndPay(user).then((data) => {console.log(data); }); 开始启动再启动
 
+###### (async () => {
+######  try {
+######    const content = await readFile("./text.txt", "utf8");
+######    console.log(content);
+######    console.log("readFile submitted!");
+######  } catch (err) {
+######    console.log(err);
+######  }
+###### })();
+
+###### console.log("outside");
+###### log result: 1. outside 2. ${content} 3. readFile submitted!
+ 
 
 
 
