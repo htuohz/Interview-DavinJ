@@ -400,6 +400,7 @@
 
 ###### console.log("outside");
 ###### log result: 1. outside 2. ${content} 3. readFile submitted!
+###### async, promise/then, call back里面都是分身在做事(就算不写await也是分身在做事)   async, promise/then, call back外面都是本体在做事 
  
 
 
