@@ -2,7 +2,7 @@ var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 var request = new XMLHttpRequest();
 request.open(
   "GET",
-  "http://192.168.1.23:9984/api/v1/metadata?search=dev77",
+  "http://localhost:9984/api/v1/metadata?search=dev77",
   false
 ); // `false` makes the request synchronous
 request.send(null);
