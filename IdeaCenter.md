@@ -374,6 +374,7 @@
 ######                   })
 ######     .then((receipt) => { console.log(receipt) }
 ###### 如果参数receipt前面要有参数user，整个 .then((receipt) => { console.log(receipt) } 要嵌套进去上面parent scope的 return的后面
+###### 这也称为callback hell, 除了callback hell, 在No.30里面的那个问题, Promise下面的代码只要等Promise开始启动就启动, 那么如果下面的代码对Promise的结果有依赖，就会遭遇undefined
 ###### 因此async await诞生了
 
 ###### 29. 同步和异步可以理解为   同步与JavaScript的主线程同步(主线程的本体)   异步与JavaScript的主线程不同步(主线程的分身)
