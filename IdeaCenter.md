@@ -406,6 +406,10 @@
 ###### 真同步被阻塞后真的就页面不动了, 假同步被阻塞后async函数以外的那些代码依旧在按顺序执行的，所以不会被完全阻塞
 
 
+###### 参考AsyncSyncTest.js文件, 不加await的话下一行的console log （“data”）会在axios.get执行开始之后就开始执行，不会等axios.get执行完成, async函数scope里的所有内容都是分身在执行,不会有阻塞问题
+
+
+
 ###### 31. stack里面会存primitive type value(fixed size)以及reference   heap里面会存object，array(size scalable)
 ###### stack仅仅负责存放函数, 嵌套最里面的函数在stack的最顶层, FILO, stack最顶层最先执行函数
 ###### 函数执行完一个call stack清空一个， 当call stack完全清空的时候， event loop开始工作， 问询callback quene(FIFO), event loop 会把callback quene的事件挨个放到stack里面执行(排队的第一个放在stack最底层)
