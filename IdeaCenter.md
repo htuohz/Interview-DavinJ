@@ -418,6 +418,9 @@
 ###### 函数执行完一个call stack清空一个， 当call stack完全清空的时候， event loop开始工作， 问询callback quene(FIFO), event loop 会把callback quene的事件挨个放到stack里面执行(排队的第一个放在stack最底层)
 ###### await写与不写的区别在于await写了以后有err的话可以更好的抓取，因为await 本身与promise有关
 
+###### 32. 为什么不在React的constructor里面写请求外部数据的代码？
+###### 因为constructor里面写的是代码逻辑（比如组件本身），而不是业务逻辑， 请求外部数据是业务逻辑
+
 
 
 
