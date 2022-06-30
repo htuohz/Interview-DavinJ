@@ -2,6 +2,8 @@
 
 ###### 0. During Australian holidays and shopping peak time(boxing day, black Friday Market), ANZ (Australian IT's leader) only aims to handle 100,000  customer requests per second (100,000 cocurrent per second). Australia (AfterPay) barely handles 4 millions cocurrent. Alibaba(1 billions cocurrent per second).  So, Australia does not focus on algorithms much, and does not care theory much, Working Life Balance. Australia likes a person who is obedient, and code elegantly. write codes that others can easily handle. Australian want to hire a person who can improve their working life balance and code productively.
 
+###### no MUI, no Redux, but vanilla JS and React, context
+
 ###### 过程正确大于结果正确
 
 ###### continue: 如果做个体户，又做产品，又做developer可以只注重界面(UI+功能)的fancy但是， 求职做developer，不会关心产品的好与坏，developer只关心开发(code quality + developer coodination through coding)的好与坏
