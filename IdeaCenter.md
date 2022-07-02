@@ -422,8 +422,31 @@
 ###### 因为constructor里面写的是代码逻辑（比如组件本身），而不是业务逻辑， 请求外部数据是业务逻辑
 
 ###### 33. useEffect, 当重新渲染时如果【】里面的值没有发生改变，则不调用这个effect
+###### 一个组件只有在2种情况下才能触发re－render，第1种情况是该组件内部的state发生改变， 第2种是该组件的props的值发生改变
 ###### 一个组件(component)只有当props或者state发生改变的时候，才会触发componentDidUpdate，这个组件会被重新渲染一次 (do re-render)，但是不会被重新挂载(but no re-mount)
-###### useEffect里面的【data】如果data被setData了，就算是set原来的那个值，useEffect还是会被触发一次, for example:  fetchData() 会被无限调用
+###### eg: const App = () => {
+######   const [weathers, setWeathers] = useState();
+######   const [currentWeather, setCurrentWeather] = useState();
+######   const [data, setData] = useState();
+######   const [loading, setLoading] = useState(true);
+######   return (
+######     < Wrapper>
+######       < Panel>
+######         < CurrentCity data={currentWeather} />
+######        < Bottom>
+######           < OtherCities
+######             weathers={weathers}
+######             handleCityWeatherClick={setCurrentWeather}
+######          />
+######           <Forecast />
+######         < /Bottom>
+######       < /Panel>
+######     < /Wrapper>
+######   ); 当weathers发生改变的时候data也会发生改变， 并且当weathers发生改变的时候app被re-render了一次，app被re－render的时候里面的CurrentCity 也被re－render了一次 （因为props (data)发生变化）但是CurrentCity不会被重新挂载一次
+
+
+
+###### 34. useEffect里面的【data】如果data被setData了，就算是set原来的那个值，useEffect还是会被触发一次, for example:  fetchData() 会被无限调用
 ######   useEffect(() => {
 ######     const fetchData = async () => {
 ######      const response = await getWeathers();
