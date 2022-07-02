@@ -422,6 +422,7 @@
 ###### 因为constructor里面写的是代码逻辑（比如组件本身），而不是业务逻辑， 请求外部数据是业务逻辑
 
 ###### 33. useEffect, 当重新渲染时如果【】里面的值没有发生改变，则不调用这个effect
+###### 一个组件(component)只有当props或者state发生改变的时候，才会触发componentDidUpdate，这个组件会被重新渲染一次 (do re-render)，但是不会被重新挂载(but no re-mount)
 
 
 
