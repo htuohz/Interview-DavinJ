@@ -423,6 +423,18 @@
 
 ###### 33. useEffect, 当重新渲染时如果【】里面的值没有发生改变，则不调用这个effect
 ###### 一个组件(component)只有当props或者state发生改变的时候，才会触发componentDidUpdate，这个组件会被重新渲染一次 (do re-render)，但是不会被重新挂载(but no re-mount)
+###### useEffect里面的【data】如果data被setData了，就算是set原来的那个值，useEffect还是会被触发一次, for example:  fetchData() 会被无限调用
+######   useEffect(() => {
+######     const fetchData = async () => {
+######      const response = await getWeathers();
+######      const data = await response.json();
+######      console.log("again and again " + data);
+######      setData(data);
+######    };
+######    setTimeout(function () {
+######      fetchData();
+######    }, 7000);
+######  }, [data]);
 
 
 
