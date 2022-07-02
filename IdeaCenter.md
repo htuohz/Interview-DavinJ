@@ -442,7 +442,7 @@
 ######         < /Bottom>
 ######       < /Panel>
 ######     < /Wrapper>
-######   ); 当weathers发生改变的时候data也会发生改变， 并且当weathers发生改变的时候app被re-render了一次，app被re－render的时候里面的CurrentCity 也被re－render了一次 （因为props (data)发生变化）但是CurrentCity不会被重新挂载一次
+######   ); 当weathers发生改变的时候data也会发生改变， 并且当weathers发生改变的时候app被re-render了一次，app被re－render的时候里面的CurrentCity 也被re－render了一次 （因为props (data)发生变化）但是CurrentCity不会被重新挂载一次,只是单纯的更新页面的数据
 
 
 
