@@ -13,6 +13,8 @@
 ###### imperative is like a Chinese restaurant chief, he has his unique cooking style, which is really unique;
 ###### declarative is like a KFC/MacDonald staff, he follows the company standard to cook; uniform style, 无论是什么人，写声明式编程的时候大方向是一样的，就带来了maintainable和reusable的提升
 
+###### app - business logic components; pages - each page as a component; shared - non-business related and shared component
+
 ###### 命令式编程 eg:   
 ###### function changeNavItem() {
 ######    var className = 'navbar__item--active';
