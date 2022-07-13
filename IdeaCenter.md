@@ -467,6 +467,25 @@
 ######  }, [data]);
 
 
+###### react rendering sequence:
+###### < Component id="A0">
+######  < Component id="B0" />
+######  < Component id="B1">
+######    < Component id="C0" />
+######    < Component id="C1" />
+######  < /Component>
+######  < Component id="B2" />
+###### < /Component>
+
+###### The sequence for the above component tree is
+###### B0
+###### C0
+###### C1
+###### B1
+###### B2
+###### A0
+
+
 
 
 
