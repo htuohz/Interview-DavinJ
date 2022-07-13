@@ -80,7 +80,9 @@
 ######  Wait for auto-complete (like in the animation)
 ######  Hit Enter
 
-###### search file: Ctrl + P 
+###### search file: Ctrl + P
+
+###### while google console opening, press shift then the mouse cursor will change to what same as when google console closed
 
 
 
