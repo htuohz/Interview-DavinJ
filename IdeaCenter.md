@@ -488,6 +488,9 @@
 
 ###### 36. useRef is like pointer or reference in c++, it does not trigger re-render, useState triggers re-render once state is changed
 
+###### real 36. null -> null;    !!null -> false;    !null -> true
+###### I use it when there is a possibility of data value being null.. and the expected data type is boolean. !!null -> false
+
 
 
 
