@@ -486,6 +486,9 @@
 ###### A0
 
 
+###### 36. useRef is like pointer or reference in c++, it does not trigger re-render, useState triggers re-render once state is changed
+
+
 
 
 
