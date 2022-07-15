@@ -491,6 +491,23 @@
 ###### real 36. null -> null;    !!null -> false;    !null -> true
 ###### I use it when there is a possibility of data value being null.. and the expected data type is boolean. !!null -> false
 
+###### 37. below the sequence of each attribute does not matter, because in object, sequence does not matter (no sequence for draggable, ref, dragging, preservedSize, and onDragStart, because key value pair sequence does not matter)
+######     < FormItem
+######              draggable="true"
+######              ref={formItemRef}
+######              dragging={
+######                !!draggingTarget && draggingTarget === formItemRef.current
+######              }
+######              preservedSize={elementSize}
+            
+######              onDragStart={(event) => {
+######                event.preventDefault();
+######                const { width, height } = event.target.getBoundingClientRect();
+######               setElementSize({ width, height });
+######                setDraggingTarget(event.target);
+######              }}
+######            >
+
 
 
 
