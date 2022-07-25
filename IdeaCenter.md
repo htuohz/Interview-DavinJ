@@ -513,6 +513,7 @@
 ###### useEffect(() => {
 ######    return () => {};
 ######  }, []);
+###### used for cleaning states before unmount, but it does not matter if you do not clean the states, it will unmount anyway.
 
 ###### 39. 做测试不测component的内部原理，尽量测试component的实现, React原生的API都不要mock, Component是里面是怎么实现的(调用的什么函数)，我就造一个一模一样的实现就可以了
 
