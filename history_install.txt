@@ -32,3 +32,28 @@
    
    
    2.2.2: http://docs.bigchaindb.com/en/master/installation/node-setup/set-up-node-software.html
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   ssh: 
+ 1518   ssh-keygen
+ 1519  open /home/davin/
+ 1520  gedit /home/davin/
+ 1521  cd /home/davin
+ 1522  ls
+ 1523  nano /home/davin/.ssh/id_rsa.pub
+ 1524  gedit /home/davin/.ssh/id_rsa.pub
+ 1525  git clone git@bitbucket.org:connect17/bundle-connect-frontend.git
+
