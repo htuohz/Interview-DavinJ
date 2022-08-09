@@ -517,7 +517,8 @@
 
 ###### 39. 做测试不测component的内部原理，尽量测试component的实现, React原生的API都不要mock, Component是里面是怎么实现的(调用的什么函数)，我就造一个一模一样的实现就可以了, 只测试动态的东西, 测试用户所能看到的页面上的改动
 
-###### 40. redux的reducer里面return object的时候注意要写成 newState = {...prevState, addedValue}的形式，因为object的reference地址在第一次声明后永远不会变， 所以prevState.push(addedValue) reference指的是仍旧在老的prevState里面, 这样会导致react无法re-render
+###### 40. redux的reducer里面return object的时候注意要写成 newState = {...prevState, addedValue}的形式，因为object的reference地址在第一次声明后永远不会变， 所以prevState.push(addedValue) reference指的是仍旧在老的prevState里面, 这样会导致react无法re-render;  在 newState = {...prevState, addedValue} 之中， addedValue如果与prevState相同就是覆盖，不同就是数组叠加成新的数组
+
 
 
 
