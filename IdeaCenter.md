@@ -538,7 +538,7 @@
 
 ###### export const loadRepos = () => {
 ######   const callback = (dispatch) => {
-######     dispatch(loadReposRequested());
+######     dispatch(loadReposRequested()); // dispatch是redux thunk插入进来的一个参数
 ######     fetchRepos
 ######       .get("", {}) // ayns request
 ######       .then((res) => dispatch(loadReposSucceeded(res)))
