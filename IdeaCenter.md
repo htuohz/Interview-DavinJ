@@ -519,6 +519,8 @@
 
 ###### 40. redux的reducer里面return object的时候注意要写成 newState = {...prevState, addedValue}的形式，因为object的reference地址在第一次声明后永远不会变， 所以prevState.push(addedValue) reference指的是仍旧在老的prevState里面, 这样会导致react无法re-render;  在 newState = {...prevState, addedValue} 之中， addedValue如果与prevState相同就是覆盖，不同就是数组叠加成新的数组
 
+###### 41. newState = {...prevState, addedValue} === Object.assign({}, prevState, {username: action.username})  (nodejs 后端 put接口 api常用的写法)
+
 
 
 
