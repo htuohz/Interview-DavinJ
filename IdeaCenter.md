@@ -564,6 +564,7 @@
 
 ###### 43. constructor-> ConponentWillMount->mount(render)->shouldUpdate->willReceiveProps->update->willUnmount
 ##### https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+##### for "react": "^16.3.2",
 <p align="center">
   <img src="./React.png" width="1290" title="LifeCycle">
 </p>
