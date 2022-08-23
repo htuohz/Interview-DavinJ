@@ -488,7 +488,7 @@
 
 ###### 36. useRef is like pointer or reference in c++, it does not trigger re-render, useState triggers re-render once state is changed
 
-###### real 36. null -> null;    !!null -> false;    !null -> true
+###### real 36. null -> null;    !!null -> false;    !null -> true (In some cases you may want to cast a variable to be explicitly boolean)
 ###### I use it when there is a possibility of data value being null.. and the expected data type is boolean. !!null -> false
 
 ###### 37. below the sequence of each attribute does not matter, because in object, sequence does not matter (no sequence for draggable, ref, dragging, preservedSize, and onDragStart, because key value pair sequence does not matter)
