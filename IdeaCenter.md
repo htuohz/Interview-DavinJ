@@ -562,6 +562,13 @@
 ###### });
 
 
+###### 43. Which dependecy method is better: 
+<p align="center">
+  <img src="./LifeCycle.png" width="270" title="LifeCycle">
+</p>
+
+
+
 
 
 
