@@ -568,6 +568,13 @@
 </p>
 
 
+###### 44. ConponentWillMount
+###### This is the only lifecycle method called on server rendering. such as PHP, Next.js
+###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
+###### calling setState() synchronously in this method will not trigger an extra rendering.
+
+
+
 
 
 
