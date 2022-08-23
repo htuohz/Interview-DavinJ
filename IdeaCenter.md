@@ -562,13 +562,16 @@
 ###### });
 
 
-###### 43. Which dependecy method is better: 
+###### 43. constructor-> ConponentWillMount->mount(render)->shouldUpdate->willReceiveProps->update->willUnmount
+
+
+###### 44. Which dependecy method is better: 
 <p align="center">
   <img src="./LifeCycle.png" width="1290" title="LifeCycle">
 </p>
 
 
-###### 44. ConponentWillMount
+###### 45. ConponentWillMount
 ###### This is the only lifecycle method called on server rendering. such as PHP, Next.js
 ###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
 ###### calling setState() synchronously in this method will not trigger an extra rendering.
