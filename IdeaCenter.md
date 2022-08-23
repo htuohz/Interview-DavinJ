@@ -563,6 +563,10 @@
 
 
 ###### 43. constructor-> ConponentWillMount->mount(render)->shouldUpdate->willReceiveProps->update->willUnmount
+##### https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+<p align="center">
+  <img src="./React.png" width="1290" title="LifeCycle">
+</p>
 
 
 ###### 44. Which dependecy method is better: 
