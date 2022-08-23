@@ -569,6 +569,8 @@
   <img src="./React.png" width="1290" title="LifeCycle">
 </p>
 
+###### Currently, if shouldComponentUpdate() returns false, then UNSAFE_componentWillUpdate(), render(), and componentDidUpdate() will not be invoked.
+
 
 ###### 44. Which dependecy method is better: 
 <p align="center">
