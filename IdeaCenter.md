@@ -595,6 +595,7 @@
 ###### 46 extension:  memoization helper (memoize-one)
 ######  // Calculate the latest filtered list. If these arguments haven't changed
 ######  // since the last render, `memoize-one` will reuse the last return value, if another unrelated prop were to change
+###### // None of the implementations shown in this section will work if props.list is recreated each time the parent component renders. But in most cases, this setup is appropriate.
 ###### Aims to 把recompute的成本降到最小
 
 
