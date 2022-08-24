@@ -592,6 +592,11 @@
 ######  If you used componentWillReceiveProps for re-computing some data only when a prop changes, use a memoization helper instead. (https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#what-about-memoization)
 ######  If you used componentWillReceiveProps to “reset” some state when a prop changes, consider either making a component fully controlled or fully uncontrolled with a key instead.
 
+###### 46 extension:  memoization helper (memoize-one)
+######  // Calculate the latest filtered list. If these arguments haven't changed
+######  // since the last render, `memoize-one` will reuse the last return value, if another unrelated prop were to change
+###### Aims to 把recompute的成本降到最小
+
 
 ###### 47. UNSAFE_componentWillUpdate(nextProps, nextState)
 ###### UNSAFE_componentWillUpdate() is invoked just before rendering when new props or state are being received.  
