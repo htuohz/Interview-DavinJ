@@ -571,17 +571,18 @@
 
 ###### Currently, if shouldComponentUpdate() returns false, then UNSAFE_componentWillUpdate(), render(), and componentDidUpdate() will not be invoked.
 
+###### 44. ConponentWillMount
+###### This is the only lifecycle method called on server rendering. such as PHP, Next.js
+###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
+###### calling setState() synchronously in this method will not trigger an extra rendering.
 
-###### 44. Which dependecy method is better: 
+###### 45. Which dependecy method is better: 
 <p align="center">
   <img src="./LifeCycle.png" width="1290" title="LifeCycle">
 </p>
 
 
-###### 45. ConponentWillMount
-###### This is the only lifecycle method called on server rendering. such as PHP, Next.js
-###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
-###### calling setState() synchronously in this method will not trigger an extra rendering.
+
 
 
 
