@@ -569,14 +569,15 @@
   <img src="./React.png" width="1290" title="LifeCycle">
 </p>
 
-###### Currently, if shouldComponentUpdate() returns false, then UNSAFE_componentWillUpdate(), render(), and componentDidUpdate() will not be invoked.
-
 ###### 44. UNSAFE_componentWillMount()
 ###### This is the only lifecycle method called on server rendering. such as PHP, Next.js
 ###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
 ###### calling setState() synchronously in this method will not trigger an extra rendering.
 
-###### 45. UNSAFE_componentWillReceiveProps(nextProps)  (this api is able to be called for the initial render)
+###### 45. Currently, if shouldComponentUpdate() returns false, then UNSAFE_componentWillUpdate(), render(), and componentDidUpdate() will not be invoked.
+
+
+###### 46. UNSAFE_componentWillReceiveProps(nextProps)  (this api is able to be called for the initial render)
 ###### UNSAFE_componentWillReceiveProps(nextProps) is invoked before a mounted component receives new props. If you need to update the state in response to prop changes (for example, to reset it), you may compare this.props and nextProps and perform state transitions using this.setState() in this method.
 
 ###### Note that if a parent component causes your component to re-render, this method will be called even if props have not changed. Make sure to compare the current and next values if you only want to handle changes.
@@ -588,7 +589,7 @@
 ######  If you used componentWillReceiveProps to “reset” some state when a prop changes, consider either making a component fully controlled or fully uncontrolled with a key instead.
 
 
-###### 46. UNSAFE_componentWillUpdate(nextProps, nextState)
+###### 47. UNSAFE_componentWillUpdate(nextProps, nextState)
 ###### UNSAFE_componentWillUpdate() is invoked just before rendering when new props or state are being received.  
 ###### This method is not called for the initial render.
 ###### Use this as an opportunity to perform preparation before an update occurs.
