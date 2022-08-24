@@ -583,9 +583,60 @@
 
 ###### 46. UNSAFE_componentWillReceiveProps(nextProps) ****** (this api is able to be called for the initial render)
 ###### For a long time, before React version 16.3, the lifecycle componentWillReceiveProps was the only way to update state in response to a change in props without an additional render. 
+###### All of the anti-patterns described in this post apply to both the older componentWillReceiveProps and the newer getDerivedStateFromProps.
+###### A common misconception is that getDerivedStateFromProps and componentWillReceiveProps are only called when props “change”. These lifecycles are called any time a parent component rerenders, regardless of whether the props are “different” from before. Because of this, it has always been unsafe to unconditionally override state using either of these lifecycles. Doing so will cause state updates to be lost. (https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#anti-pattern-unconditionally-copying-props-to-state )
+
+###### class EmailInput extends Component {
+######  state = { email: this.props.email };
+
+######  render() {
+######    return < input onChange={this.handleChange} value={this.state.email} />;
+######  }
+
+######  handleChange = event => {
+######    this.setState({ email: event.target.value });
+######  };
+
+######  componentWillReceiveProps(nextProps) {
+######    // This will erase any local state updates!
+######    // Do not do this.
+######    this.setState({ email: nextProps.email });
+######  }
+###### }
+
+###### At first, this component might look okay. State is initialized to the value specified by props and updated when we type into the < input>. But if our component’s parent rerenders, anything we’ve typed into the < input> will be lost! Demo: (https://codesandbox.io/s/m3w9zn1z8x)
+###### This holds true even if we were to compare nextProps.email !== this.state.email before resetting.
+###### In this simple example, adding shouldComponentUpdate to rerender only when the email prop has changed could fix this. However in practice, components usually accept multiple props; another prop changing would still cause a rerender and improper reset.
+
+###### Continuing the example above, we could avoid accidentally erasing state by only updating it when props.email changes (if parent component re-renders, this solution does not work)
+###### class EmailInput extends Component {
+######   state = {
+######     email: this.props.email
+######   };
+######   componentWillReceiveProps(nextProps) {
+######     // Any time props.email changes, update state.
+######     if (nextProps.email !== this.props.email) {
+######       this.setState({
+######        email: nextProps.email
+######       });
+######     }
+######   }
+######   ...
+###### }
+
+###### There is still a subtle problem. Imagine a password manager app using the above input component. When navigating between details for two accounts with the same email, the input would fail to reset. (https://codesandbox.io/s/mz2lnkjkrx)
+###### Fortunately there are two alternatives that work better. 
+
+###### alternatives 2: Fully uncontrolled component with a key
+###### < EmailInput
+######   defaultEmail={this.props.user.email}
+######   key={this.props.user.id}
+######  />
+###### Each time the ID changes, the EmailInput will be recreated and its state will be reset to the latest defaultEmail value. (Click here to see a demo of this pattern.) With this approach, you don’t have to add key to every input. It might make more sense to put a key on the whole form instead. Every time the key changes, all components within the form will be recreated with a freshly initialized state. (https://codesandbox.io/s/6v1znlxyxn)
+
 ###### UNSAFE_componentWillReceiveProps(nextProps) is invoked before a mounted component receives new props. If you need to update the state in response to prop changes (for example, to reset it), you may compare this.props and nextProps and perform state transitions using this.setState() in this method.
 
-###### Note that if a parent component causes your component to re-render, this method will be called even if props have not changed. Make sure to compare the current and next values if you only want to handle changes.
+###### Note that if a parent component causes your component to re-render, this method will be called even if props have not changed. Make sure to compare the current and next values if you only want to handle changes. (but even if we were to compare nextProps.email !== this.state.email before resetting, component’s parent rerenders, this method will be called)
 
 ###### Note:
 ######  Using this lifecycle method often leads to bugs and inconsistencies
