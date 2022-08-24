@@ -582,6 +582,7 @@
 
 
 ###### 46. UNSAFE_componentWillReceiveProps(nextProps) ****** (this api is able to be called for the initial render)
+###### For a long time, before React version 16.3, the lifecycle componentWillReceiveProps was the only way to update state in response to a change in props without an additional render. 
 ###### UNSAFE_componentWillReceiveProps(nextProps) is invoked before a mounted component receives new props. If you need to update the state in response to prop changes (for example, to reset it), you may compare this.props and nextProps and perform state transitions using this.setState() in this method.
 
 ###### Note that if a parent component causes your component to re-render, this method will be called even if props have not changed. Make sure to compare the current and next values if you only want to handle changes.
