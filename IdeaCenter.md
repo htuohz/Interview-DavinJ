@@ -574,7 +574,9 @@
 ###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
 ###### calling setState() synchronously in this method will not trigger an extra rendering.
 
-###### 45. Currently, if shouldComponentUpdate() returns false, then UNSAFE_componentWillUpdate(), render(), and componentDidUpdate() will not be invoked.
+###### 45. shouldComponentUpdate(nextProps, nextState)
+###### shouldComponentUpdate() is invoked before rendering when new props or state are being received. Defaults to true. This method is not called for the initial render or when forceUpdate() is used.
+###### Currently, if shouldComponentUpdate() returns false, then UNSAFE_componentWillUpdate(), render(), and componentDidUpdate() will not be invoked.
 
 
 ###### 46. UNSAFE_componentWillReceiveProps(nextProps)  (this api is able to be called for the initial render)
