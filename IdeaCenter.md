@@ -598,6 +598,18 @@
 ###### This method is not called for the initial render.
 ###### Use this as an opportunity to perform preparation before an update occurs.
 
+###### 48. componentWillUnmount()
+###### componentWillUnmount() is invoked immediately before a component is unmounted and destroyed. Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in componentDidMount().
+###### You should not call setState() in componentWillUnmount() because the component will never be re-rendered. Once a component instance is unmounted, it will never be mounted again.
+
+###### possible error example for call setState() or (validating timers, doing network requests, or any subscriptions) in componentWillUnmount() 
+###### Warning: Can't perform a React state update on an unmounted component. This is a no-op, but it indicates a memory leak in your application. To fix, cancel all subscriptions and asynchronous tasks in the componentWillUnmount method.
+######    in UserDetails (created by ConnectFunction)
+######    in ConnectFunction (at require_auth.js:119)
+######    in div (at require_auth.js:116)
+######    in Authentication (created by ConnectFunction)
+######    in ConnectFunction (at PendingWrapper.jsx:93
+
 ###### . Which dependecy method is better: 
 <p align="center">
   <img src="./LifeCycle.png" width="1290" title="LifeCycle">
