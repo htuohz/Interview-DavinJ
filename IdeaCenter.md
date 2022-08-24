@@ -561,9 +561,9 @@
 ######   data: { err },
 ###### });
 
-######                                                     ->shouldComponentUpdate ->componentWillUpdate
-###### 43. constructor-> ConponentWillMount->mount(render)                                                 ->update->willUnmount
-######                                                                  ->willReceiveProps
+######    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp->shouldComponentUpdate ->componentWillUpdate
+###### 43. constructor-> ConponentWillMount->mount(render) &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ->update->willUnmount
+######    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp->willReceiveProps
 
 ##### https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 ##### for "react": "^16.3.2",
