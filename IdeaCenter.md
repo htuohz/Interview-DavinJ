@@ -571,6 +571,8 @@
   <img src="./React.png" width="1290" title="LifeCycle">
 </p>
 
+##### 注意：mount挂载 ！== render渲染  渲染是挂载的一部分触发re-render不代表触发re-mount    re-render可能发生多次但是mount 到 unmount就一次 组件unmount之后再无re-render
+
 ###### 44. UNSAFE_componentWillMount() **
 ###### This is the only lifecycle method called on server rendering. such as PHP, Next.js
 ###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
