@@ -586,7 +586,7 @@
 ###### 46. UNSAFE_componentWillReceiveProps(nextProps) ****** (this api is able to be called for the initial render)
 ###### For a long time, before React version 16.3, the lifecycle componentWillReceiveProps was the only way to update state in response to a change in props without an additional render. 
 ###### All of the anti-patterns described in this post apply to both the older componentWillReceiveProps and the newer getDerivedStateFromProps.
-###### A common misconception is that getDerivedStateFromProps and componentWillReceiveProps are only called when props “change”. These lifecycles are called any time a parent component rerenders, regardless of whether the props are “different” from before. Because of this, it has always been unsafe to unconditionally override state using either of these lifecycles. Doing so will cause state updates to be lost. (https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#anti-pattern-unconditionally-copying-props-to-state )
+###### A common misconception is that getDerivedStateFromProps and componentWillReceiveProps are only called when props “change”. These lifecycles are called any time a parent component rerenders, regardless of whether the props are “different” from before. (也结合龙哥20220403__190032来看) Because of this, it has always been unsafe to unconditionally override state using either of these lifecycles. Doing so will cause state updates to be lost. (https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#anti-pattern-unconditionally-copying-props-to-state )
 
 ###### class EmailInput extends Component {
 ######  state = { email: this.props.email };
