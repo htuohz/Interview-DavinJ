@@ -682,6 +682,7 @@
 
 
 ###### 50. the first parameter in setState allows you to manipulate the existing state, the second parameter in setState allows you to get the newly manipulated State immediately
+###### setState第一个参数可以是object也可以是callback function做计算再去return object
 <p align="center">
   <img src="./stateParams.JPG" width="1290" title="StateParams">
 </p>
