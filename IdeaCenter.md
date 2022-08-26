@@ -681,6 +681,12 @@
 
 
 
+###### 50. the first parameter in setState allows you to manipulate the existing state, the second parameter in setState allows you to get the newly manipulated State immediately
+<p align="center">
+  <img src="./stateParams.JPG" width="1290" title="StateParams">
+</p>
+
+
 
 
 
