@@ -680,6 +680,8 @@
 </p>
 
 ###### 50. React Virtual Dom compute difference, important for performance optimisation using React.memo(), useMemo(), useCallBack(), the difference is defined by the <b>memory address</b>
+参考协调算法
+(https://zh-hans.reactjs.org/docs/reconciliation.html)
 
 <p align="center">
   <img src="./VDComputDifference.JPG" width="1290" title="VDComputeDifference">
