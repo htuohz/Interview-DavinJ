@@ -687,7 +687,8 @@
   <img src="./VDComputDifference.JPG" width="1290" title="VDComputeDifference">
 </p>
 
-###### 51. multiple setState, but only the last setState->render result will show on the browser 
+###### 51. multiple setState, but only the last setState->render result will show on the browser
+###### here ony 3 will show on browser, even if the state went through 0 -> 1 -> 2 -> 3,  0 -> 1 -> 2 are just such short period that the broswer is unable to catch it
 <p align="center">
   <img src="./setStateOnlyLastBitShow.JPG" width="1290" title="setStateOnlyLastBitShow">
 </p>
