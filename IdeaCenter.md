@@ -679,7 +679,8 @@
   <img src="./LifeCycle.png" width="1290" title="LifeCycle">
 </p>
 
-###### 50. 
+###### 50. React Virtual Dom compute difference, important for performance optimisation using React.memo(), useMemo(), useCallBack(), the difference is defined by the <b>memory address</b>
+
 <p align="center">
   <img src="./VDComputDifference.JPG" width="1290" title="VDComputeDifference">
 </p>
