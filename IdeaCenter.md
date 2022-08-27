@@ -721,7 +721,7 @@
 <p align="center">
   <img src="./oldStateaAsync2.JPG" width="1290" title="oldStateAsync2">
 </p>
-
+###### 而回调函数的第一个参数prevState一定能确保拿到的老的state就是上一个state的值  this.setState((prevState) => {  return prevState })
 
 
 
