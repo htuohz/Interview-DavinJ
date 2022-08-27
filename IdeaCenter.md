@@ -679,9 +679,12 @@
   <img src="./LifeCycle.png" width="1290" title="LifeCycle">
 </p>
 
+###### 50. 
+<p align="center">
+  <img src="./VDComputeDifference.JPG" width="1290" title="VDComputeDifference">
+</p>
 
-
-###### 50. the first parameter in setState allows you to manipulate the existing state, the second parameter in setState allows you to get the newly manipulated State immediately
+###### 51. the first parameter in setState allows you to manipulate the existing state, the second parameter in setState allows you to get the newly manipulated State immediately
 ###### setState第一个参数可以是object也可以是callback function做计算再去return object
 ###### 第二个参数永远是callback function，这个参数在setState成功后执行
 ###### react hooks的setState没有第二个参数
