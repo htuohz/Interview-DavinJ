@@ -712,6 +712,13 @@
 
 
 
+###### 为什么对老的state操作时，setState的第一个参数必须是callback function？因为setState是异步的，我不一定能直接拿到老的state的值
+<p align="center">
+  <img src="./oldStateAsync.JPG" width="1290" title="oldStateAsync">
+</p>
+
+
+
 
 
 
