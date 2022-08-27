@@ -681,7 +681,7 @@
 
 ###### 50. 
 <p align="center">
-  <img src="./VDComputeDifference.JPG" width="1290" title="VDComputeDifference">
+  <img src="./VDComputDifference.JPG" width="1290" title="VDComputeDifference">
 </p>
 
 ###### 51. the first parameter in setState allows you to manipulate the existing state, the second parameter in setState allows you to get the newly manipulated State immediately
