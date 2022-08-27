@@ -674,7 +674,7 @@
 ######    in Authentication (created by ConnectFunction)
 ######    in ConnectFunction (at PendingWrapper.jsx:93
 
-###### . Which dependecy method is better: 
+###### 49. Which dependecy method is better: 
 <p align="center">
   <img src="./LifeCycle.png" width="1290" title="LifeCycle">
 </p>
@@ -711,16 +711,19 @@
 </p>
 
 
-
 ###### 为什么对老的state操作时，setState的第一个参数必须是callback function？因为setState是异步的，
 ###### 我不一定能保证直接拿到老的state的值就是我想要的state的值，因为setState是异步的，而且this.state是不稳定的， 我不能基于一个不确定的东西去创建一个新的东西
+
 <p align="center">
   <img src="./oldStateAsync.JPG" width="1290" title="oldStateAsync">
 </p>
+
 ###### 以下的user也是一样我不一定能直接拿到old State
+
 <p align="center">
   <img src="./oldStateaAsync2.JPG" width="1290" title="oldStateAsync2">
 </p>
+
 ###### 而回调函数的第一个参数prevState一定能确保拿到的老的state就是上一个state的值  this.setState((prevState) => {  return prevState })
 
 
