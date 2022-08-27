@@ -687,7 +687,12 @@
   <img src="./VDComputDifference.JPG" width="1290" title="VDComputeDifference">
 </p>
 
-###### 51. the first parameter in setState allows you to manipulate the existing state, the second parameter in setState allows you to get the newly manipulated State immediately
+###### 51. multiple setState, but only the last setState->render result will show on the browser 
+<p align="center">
+  <img src="./setStateOnlyLastBitShow.JPG" width="1290" title="setStateOnlyLastBitShow">
+</p>
+
+###### 52. the first parameter in setState allows you to manipulate the existing state, the second parameter in setState allows you to get the newly manipulated State immediately
 ###### setState第一个参数可以是object也可以是callback function做计算再去return object
 ###### 第二个参数永远是callback function，这个参数在setState成功后执行
 ###### react hooks的setState没有第二个参数
