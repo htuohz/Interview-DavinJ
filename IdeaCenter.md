@@ -702,6 +702,12 @@
 </p>
 
 
+###### react setState is async, so we cannot get the newest updated state without using the second parameter:
+<p align="center">
+  <img src="./setStateIsAsync.JPG" width="1290" title="setStateIsAsync">
+</p>
+
+
 
 
 
