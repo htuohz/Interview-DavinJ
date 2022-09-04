@@ -577,7 +577,7 @@
 ###### 44. UNSAFE_componentWillMount() **
 ###### This is the only lifecycle method called on server rendering. such as PHP, Next.js
 ###### UNSAFE_componentWillMount() is invoked just before mounting occurs. It is called before render()
-###### calling setState() synchronously in this method will not trigger an extra rendering.
+###### calling setState() synchronously in this method will not trigger an extra rendering, because the component have not mounted yet, and setState is unable to trigger an re-render, it just change the initial rendering result instead.
 
 ###### 45. shouldComponentUpdate(nextProps, nextState)
 ###### shouldComponentUpdate() is invoked before rendering when new props or state are being received. Defaults to true. This method is not called for the initial render or when forceUpdate() is used.
