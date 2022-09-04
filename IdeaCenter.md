@@ -563,7 +563,7 @@
 
 ###### 43. constructor-> ConponentWillMount-> DidMount(render)-> willReceiveProps ->shouldComponentUpdate ->componentWillUpdate->ComponentDidUpdate->willUnmount
 <p align="center">
-  <img src="./mapping.jpg" width="1290" title="mapping">
+  <img src="./mapping.JPG" width="1290" title="mapping">
 </p>
 
 ##### https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
