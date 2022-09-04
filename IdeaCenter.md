@@ -561,7 +561,7 @@
 ######   data: { err },
 ###### });
 
-###### 43. constructor-> ConponentWillMount-> DidMount(render)-> willReceiveProps ->shouldComponentUpdate ->componentWillUpdate->ComponentDidUpdate->willUnmount
+###### 43. constructor-> ConponentWillMount-> DidMount(render)-> willReceiveProps ->shouldComponentUpdate ->componentWillUpdate->ComponentDidUpdate(already re-rendered)->willUnmount
 <p align="center">
   <img src="./mapping.JPG" width="1290" title="mapping">
 </p>
