@@ -748,7 +748,9 @@
 ######         email: '',
 ######         password: '',
 ######         confirmPassword: '',
-######     }中的一个property但是与此同时其他的properties都会被清除
+######     }中的一个property但是与此同时其他的properties都会被清除   
+
+######    result: submitted {confirmPassword: '12'}
 
 
 
@@ -758,6 +760,7 @@
 ######                            [field.key]: event.target.value,
 ######                        }))} 
 
+######    result: submitted {email: '12', password: '12', confirmPassword: '25'}
 
 
 
