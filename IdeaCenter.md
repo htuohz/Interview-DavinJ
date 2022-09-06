@@ -730,6 +730,12 @@
 ###### 而回调函数的第一个参数prevState一定能确保拿到的老的state就是上一个state的值  this.setState((prevState) => {  return prevState })
 
 
+###### if appear this error:
+###### react_devtools_backend.js:4026 Warning: A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing ###### from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component.
+
+###### component inputted props is wrong
+
+
 
 
 
