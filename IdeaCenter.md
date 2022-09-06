@@ -752,6 +752,13 @@
 
 
 
+######            onChange={(event)=>setData((prevData)=> ({
+######                            ...prevData,
+######                            [field.key]: event.target.value,
+######                        }))} 
+
+
+
 
 
 
