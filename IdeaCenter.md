@@ -736,6 +736,16 @@
 ###### component props的值没有传对
 
 
+######     const [data, setData] = useState({
+######         email: '',
+######         password: '',
+######         confirmPassword: '',
+######     });
+
+
+######   onChange={(event)=>{ setData({ [field.key]: event.target.value })}} 
+
+
 
 
 
