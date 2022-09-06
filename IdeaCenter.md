@@ -744,6 +744,11 @@
 
 
 ######   onChange={(event)=>{ setData({ [field.key]: event.target.value })}} 
+######   input每一次输入的时候都会设置{
+######         email: '',
+######         password: '',
+######         confirmPassword: '',
+######     }中的一个property但是与此同时其他的properties都会被清除
 
 
 
