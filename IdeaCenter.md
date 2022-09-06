@@ -40,7 +40,7 @@
 
 ###### debug用二分法binary search, for example： p1页面不工作了，先去html，css操作加上或减去class name，发现工作了，那就是javascript写错了, 显示／隐藏一个页面用添加／删除class name更readable，maintainable，而不是javascript加上display：none，用class name具象化了这个功能
 
-###### !!!!!!!!! Readable最重要，然后是Maintainable第二重要，然后是Reusable第三重要， 因为在代码的千万种变化中要做要统一的使用， 世界上没这么好的事情Resuable是一个很深的坑
+###### !!!!!!!!! Readable最重要，然后是Maintainable第二重要，然后是Reusable第三重要， 因为在代码的千万种变化中要做要统一的使用， 世界上没这么好的事情Resuable是一个很深的坑， 过于复杂的抽象不如简单重复，如果复用导致代码写起来复杂了很多倍， 我为了复用而复用， 导致我的代码可读性降低了，此时复杂的抽象不如简单重复
 
 ###### 1. why we can put html elements in javascript?
 ######  .JSX (if we use eslint airbnb, the .JS would no longer be valid when run the program)
