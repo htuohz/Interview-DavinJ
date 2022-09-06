@@ -733,7 +733,7 @@
 ###### if appear this error:
 ###### react_devtools_backend.js:4026 Warning: A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing ###### from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component.
 
-###### component inputted props is wrong
+###### component props的值没有传对
 
 
 
