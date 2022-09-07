@@ -678,6 +678,7 @@
 ######    in ConnectFunction (at PendingWrapper.jsx:93
 
 ###### 49. Which dependecy method is better: 
+###### 独立于user与否取决于要做的事情的逻辑线在不在同一条，如果逻辑线不在同一一条，2件事情的逻辑独立那么就独立于user
 <p align="center">
   <img src="./LifeCycle.png" width="1290" title="LifeCycle">
 </p>
