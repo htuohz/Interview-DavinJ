@@ -649,7 +649,7 @@
 ######  Using this lifecycle method often leads to bugs and inconsistencies
 ######  If you need to perform a side effect (for example, data fetching or an animation) in response to a change in props, use componentDidUpdate lifecycle instead.
 ######  If you used componentWillReceiveProps for re-computing some data only when a prop changes, use a memoization helper instead. (https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#what-about-memoization)  类似于react hooks里面的useMemo和useCallBack (也结合龙哥20220403__190032来看18：00左右, 以及20220111_192519的49:15左右, 1:07:00左右有对App下面的一个组件，整个组件用React.memo(()=>{}))
-######  If you used componentWillReceiveProps to “reset” some state when a prop changes, consider either making a component fully controlled or fully uncontrolled with a key instead.
+######  If you used componentWillReceiveProps to “reset” some state when a prop changes, consider either making a component fully controlled or fully uncontrolled with a key instead. (in map function every component has to have a key)
 
 
  
