@@ -766,7 +766,10 @@
 
 
 
-###### 53. 
+###### 53. 关于函数默认传值的问题 
+###### https://laurieontech.com/posts/function-fun/#parameters
+
+###### By default, event is passed as an argument to the callback function.
 ###### fn = (res) => setResponse(res)  ===   fn = setResponse
 ######                axios.post('http://localhost:8000/auth/sign-up', {
 ######                    email: data.email,
