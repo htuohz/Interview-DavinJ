@@ -766,10 +766,19 @@
 
 
 
-
+###### 53. 
 ###### fn = (res) => setResponse(res)  ===   fn = setResponse
+######                axios.post('http://localhost:8000/auth/sign-up', {
+######                    email: data.email,
+######                    password: data.password,
+######                })
+######                    .then(fn)
+######                    .catch((error)=> setResponse(error.response))
+######                    .finally(()=>setLoading(false))
 
 
+
+###### 54. 
 ###### this.state = {
 ######  sth: {}
 ###### }
