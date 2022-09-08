@@ -784,7 +784,7 @@
 
 
 
-###### 54. 
+###### 54. cannot read property of undefined的产生的根本原因
 ###### this.state = {
 ######  sth: {}
 ###### }
