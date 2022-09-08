@@ -731,12 +731,7 @@
 ###### 而回调函数的第一个参数prevState一定能确保拿到的老的state就是上一个state的值  this.setState((prevState) => {  return prevState })
 
 
-###### if appear this error:
-###### react_devtools_backend.js:4026 Warning: A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing ###### from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component.
-
-###### component props的值没有传对
-
-
+###### 52 extension：在react hooks的一个小例子： react hooks没有第二个参数， 但是也有自己的方法确保拿到老的state就是上一个state的值， 如下：
 ######     const [data, setData] = useState({
 ######         email: '',
 ######         password: '',
@@ -753,9 +748,7 @@
 
 ######    result: submitted {confirmPassword: '12'}
 
-
-
-######    所以要改用回调函数把之前的就状态merge进来
+######    所以要改用回调函数把之前的旧状态merge进来
 ######            onChange={(event)=>setData((prevData)=> ({
 ######                            ...prevData,
 ######                            [field.key]: event.target.value,
@@ -764,6 +757,10 @@
 ######    result: submitted {email: '12', password: '12', confirmPassword: '25'}
 
 
+###### if appear this error:
+###### react_devtools_backend.js:4026 Warning: A component is changing a controlled input to be uncontrolled. This is likely caused by the value changing ###### from a defined to undefined, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component.
+
+###### component props的值没有传对
 
 
 ###### 53. 关于函数默认传值的问题 
