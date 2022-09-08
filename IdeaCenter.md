@@ -767,6 +767,17 @@
 
 
 
+###### fn = (res) => setResponse(res)  ===   fn = setResponse
+
+
+###### this.state = {
+######  sth: {}
+###### }
+###### console.log(this.state.sth.address) 是不会报错的  但是会出undefined  不阻塞程序  {}.address 是undefined  （只要句号左边不是undefined就不会阻塞程序）
+###### console.log(this.state.sth.address.streetNumber) 会报错阻塞程序 因为undefined.streetNumber
+
+
+
 
 
 
