@@ -770,6 +770,9 @@
 ###### https://laurieontech.com/posts/function-fun/#parameters
 
 ###### By default, event is passed as an argument to the callback function.
+###### With callback functions on JavaScript methods, the arguments are automatically passed in by the method itself.
+
+###### addEventListener全家桶比如onClick, onChange会有click， change事件event产生； 果没有东西生成变量当作参数的话 简写下的回调函数会报错，说它需要一个参数但是没有传入参数
 ###### fn = (res) => setResponse(res)  ===   fn = setResponse
 ######                axios.post('http://localhost:8000/auth/sign-up', {
 ######                    email: data.email,
