@@ -732,6 +732,7 @@
 
 
 ###### 52 extension：在react hooks的一个小例子： react hooks没有第二个参数， 但是也有自己的方法确保拿到老的state就是上一个state的值， 如下：
+###### 这个例子也是说明了为什么直接onChange={(event)=>{ setData({ [field.key]: event.target.value })}} 不靠谱
 ######     const [data, setData] = useState({
 ######         email: '',
 ######         password: '',
@@ -748,7 +749,7 @@
 
 ######    result: submitted {confirmPassword: '12'}
 
-######    所以要改用回调函数把之前的旧状态merge进来
+######    所以要改用回调函数把之前的旧状态merge进来  （react hooks自己的方法）
 ######            onChange={(event)=>setData((prevData)=> ({
 ######                            ...prevData,
 ######                            [field.key]: event.target.value,
