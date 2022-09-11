@@ -789,6 +789,20 @@
 ###### console.log(this.state.sth.address) 是不会报错的  但是会出undefined  不阻塞程序  {}.address 是undefined  （只要句号左边不是undefined就不会阻塞程序）
 ###### console.log(this.state.sth.address.streetNumber) 会报错阻塞程序 因为undefined.streetNumber
 
+###### 55. reduce的用法：
+###### [0,1,2,3].reduce:
+###### reduce()里面内置（作者固定好的）接受一个callback function的参数 (acc, cur) => {}
+###### acc是累计值， cur是当前值
+###### 所以如下图example:
+<p align="center">
+  <img src="./reduce1.JPG" width="1290" title="StateParams">
+</p>
+
+<p align="center">
+  <img src="./reduce2.JPG" width="1290" title="StateParams">
+</p>
+
+
 
 
 
