@@ -802,6 +802,11 @@
   <img src="./reduce2.JPG" width="1290" title="reduce2">
 </p>
 
+###### 第0次的acc如果为undefined， JavaScript会报错，因为Javascript不让结构中出现undefined， 所以我们在第二个参数中写空的Object， 那么第一次的acc的undefined会被替换成空Object
+<p align="center">
+  <img src="./reduce3.JPG" width="1290" title="第二个参数中写空的Object，第一次的acc的undefined会被替换成空Object">
+</p>
+
 
 
 
