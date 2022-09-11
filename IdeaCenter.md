@@ -791,7 +791,8 @@
 
 ###### 55. reduce的用法：
 ###### [0,1,2,3].reduce:
-###### reduce()里面内置（作者固定好的）接受一个callback function的参数 (acc, cur) => {}
+###### reduce()里面内置（作者固定好的）接受第一个参数为callback function的参数 (acc, cur) => {}
+###### reduce()里面内置（作者固定好的）接受第二个参数为第一次acc的值
 ###### acc是累计值， cur是当前值
 ###### 所以如下图example:
 <p align="center">
@@ -802,7 +803,7 @@
   <img src="./reduce2.JPG" width="1290" title="reduce2">
 </p>
 
-###### 第0次的acc如果为undefined， JavaScript会报错，因为Javascript不让结构中出现undefined， 所以我们在第二个参数中写空的Object， 那么第一次的acc的undefined会被替换成空Object
+###### 第0次的acc如果为undefined， JavaScript会报错，因为Javascript不让结构中出现undefined， 所以我们在reduce()里面把第二个参数中写空的Object， 那么第一次的acc的undefined会被替换成空Object
 <p align="center">
   <img src="./reduce3.JPG" width="1290" title="第二个参数中写空的Object，第一次的acc的undefined会被替换成空Object">
 </p>
