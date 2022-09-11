@@ -795,11 +795,11 @@
 ###### acc是累计值， cur是当前值
 ###### 所以如下图example:
 <p align="center">
-  <img src="./reduce1.JPG" width="1290" title="StateParams">
+  <img src="./reduce1.JPG" width="1290" title="reduce1">
 </p>
 
 <p align="center">
-  <img src="./reduce2.JPG" width="1290" title="StateParams">
+  <img src="./reduce2.JPG" width="1290" title="reduce2">
 </p>
 
 
